@@ -2,7 +2,7 @@
 
 ## mod-racial-trait-swap
 
-- Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-racial-trait-swap/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-racial-trait-swap)
+- Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-racial-trait-swap/workflows/core-build/badge.svg?branch=main&event=push)](https://github.com/azerothcore/mod-racial-trait-swap)
 
 ## Description
 
