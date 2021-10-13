@@ -6,7 +6,7 @@
 
 ## Description
 
-- Skips the Death Knight starting zone, for those who want to make a Death Knight without having to go through the starting area.
+- Racial Trait NPC, that allows you, for a ingame cost of gold (configurable), to trade out your racial traits for another.
 
 ## How to use ingame
 
@@ -25,7 +25,7 @@
 
 ## Edit module configuration (optional)
 
-If you need to change the module configuration, go to your server configuration folder (where your worldserver or worldserver.exe is), copy SkipDKModule.conf.dist to SkipDKModule.conf and edit that new file.
+If you need to change the module configuration, go to your server configuration folder (where your worldserver or worldserver.exe is), copy RacialTraitSwap.dist to RacialTraitSwap.conf and edit that new file.
 
 ### Credits ###
 ------------------------------------------------------------------------------------------------------------------
