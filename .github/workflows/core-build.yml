@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: 'recursive'
-          path: 'modules/mod-skip-dk-starting-area'
+          path: 'modules/mod-racial-trait-swap'
       - name: Cache
         uses: actions/cache@v1.1.2
         with:
