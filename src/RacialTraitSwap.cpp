@@ -178,7 +178,7 @@ class Azerothcore_Race_Trait_announce : public PlayerScript
 public:
     Azerothcore_Race_Trait_announce() : PlayerScript("Azerothcore_Race_Trait_announce") { }
 
-    void OnLogin(Player* Player, bool /*firstLogin*/)
+    void OnLogin(Player* Player)
     {
         if (sConfigMgr->GetBoolDefault("Azerothcore.Racial.Trait.Swap.Announce.enable", true))
         {
