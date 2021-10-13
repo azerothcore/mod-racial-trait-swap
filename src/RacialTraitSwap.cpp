@@ -178,7 +178,7 @@ class Azerothcore_Race_Trait_announce : public PlayerScript
 public:
     Azerothcore_Race_Trait_announce() : PlayerScript("Azerothcore_Race_Trait_announce") { }
 
-    void OnLogin(Player* Player, bool /*firstLogin*/) override
+    void OnLogin(Player* Player, bool /*firstLogin*/)
     {
         if (sConfigMgr->GetBoolDefault("Azerothcore.Racial.Trait.Swap.Announce.enable", true))
         {
@@ -197,7 +197,7 @@ public:
     {
         npc_race_trait_swapAI(Creature* creature) : ScriptedAI(creature) { }
 
-        bool OnGossipHello(Player* player) override
+        bool OnGossipHello(Player* player)
         {
             if (player->IsInCombat())
             {
@@ -231,7 +231,7 @@ public:
             return true;
         }
 
-        bool OnGossipSelect(Player* player, uint32 /*menuId*/, uint32 gossipListId) override
+        bool OnGossipSelect(Player* player, uint32 /*menuId*/, uint32 gossipListId)
         {
             uint32 const sender = player->PlayerTalkClass->GetGossipOptionSender(gossipListId);
             uint32 const action = player->PlayerTalkClass->GetGossipOptionAction(gossipListId);
@@ -471,106 +471,106 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(28877, false);//Arcane Affinity
-                player->LearnSpell(822, false);// Magic Resistance
-                if (player->GetClass() == CLASS_DEATH_KNIGHT)
+                player->learnSpell(28877, false);//Arcane Affinity
+                player->learnSpell(822, false);// Magic Resistance
+                if (player->getClass() == CLASS_DEATH_KNIGHT)
                 {
-                    player->LearnSpell(50613, false);//Arcane Torrent
+                    player->learnSpell(50613, false);//Arcane Torrent
                 }
-                if (player->GetClass() == CLASS_HUNTER || player->GetClass() == CLASS_MAGE || player->GetClass() == CLASS_PALADIN || player->GetClass() == CLASS_WARLOCK)
+                if (player->getClass() == CLASS_HUNTER || player->getClass() == CLASS_MAGE || player->getClass() == CLASS_PALADIN || player->getClass() == CLASS_WARLOCK)
                 {
-                    player->LearnSpell(28730, false);//Arcane Torrent
+                    player->learnSpell(28730, false);//Arcane Torrent
                 }
-                if (player->GetClass() == CLASS_ROGUE)
+                if (player->getClass() == CLASS_ROGUE)
                 {
-                    player->LearnSpell(25046, false);//Arcane Torrent
+                    player->learnSpell(25046, false);//Arcane Torrent
                 }
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 2://Draenei Selection
@@ -586,118 +586,118 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(28875, false);// Gem Cutting
-                if (player->GetClass() == CLASS_DEATH_KNIGHT)
+                player->learnSpell(28875, false);// Gem Cutting
+                if (player->getClass() == CLASS_DEATH_KNIGHT)
                 {
-                    player->LearnSpell(59545, false);//Gift of Naaru
-                    player->LearnSpell(59539, false);//Shadow Resistance
+                    player->learnSpell(59545, false);//Gift of Naaru
+                    player->learnSpell(59539, false);//Shadow Resistance
                 }
-                if (player->GetClass() == CLASS_DEATH_KNIGHT || player->GetClass() == CLASS_HUNTER || player->GetClass() == CLASS_PALADIN || player->GetClass() == CLASS_WARRIOR)
+                if (player->getClass() == CLASS_DEATH_KNIGHT || player->getClass() == CLASS_HUNTER || player->getClass() == CLASS_PALADIN || player->getClass() == CLASS_WARRIOR)
                 {
-                    player->LearnSpell(6562, false);//Heroic Presence
+                    player->learnSpell(6562, false);//Heroic Presence
                 }
-                if (player->GetClass() == CLASS_HUNTER)
+                if (player->getClass() == CLASS_HUNTER)
                 {
-                    player->LearnSpell(59543, false);//Gift of Naaru
-                    player->LearnSpell(59536, false);//Shadow Resistance
+                    player->learnSpell(59543, false);//Gift of Naaru
+                    player->learnSpell(59536, false);//Shadow Resistance
                 }
-                if (player->GetClass() == CLASS_MAGE)
+                if (player->getClass() == CLASS_MAGE)
                 {
-                    player->LearnSpell(59548, false);//Gift of Naaru
-                    player->LearnSpell(59541, false);//Shadow Resistance
+                    player->learnSpell(59548, false);//Gift of Naaru
+                    player->learnSpell(59541, false);//Shadow Resistance
                 }
-                if (player->GetClass() == CLASS_MAGE || player->GetClass() == CLASS_PRIEST || player->GetClass() == CLASS_SHAMAN)
+                if (player->getClass() == CLASS_MAGE || player->getClass() == CLASS_PRIEST || player->getClass() == CLASS_SHAMAN)
                 {
-                    player->LearnSpell(28878, false);//Heroic Presence
+                    player->learnSpell(28878, false);//Heroic Presence
                 }
-                if (player->GetClass() == CLASS_PALADIN)
+                if (player->getClass() == CLASS_PALADIN)
                 {
-                    player->LearnSpell(59542, false);//Gift of Naaru
-                    player->LearnSpell(59535, false);//Shadow Resistance
+                    player->learnSpell(59542, false);//Gift of Naaru
+                    player->learnSpell(59535, false);//Shadow Resistance
                 }
-                if (player->GetClass() == CLASS_PRIEST)
+                if (player->getClass() == CLASS_PRIEST)
                 {
-                    player->LearnSpell(59544, false);//Gift of Naaru
-                    player->LearnSpell(59538, false);//Shadow Resistance
+                    player->learnSpell(59544, false);//Gift of Naaru
+                    player->learnSpell(59538, false);//Shadow Resistance
                 }
-                if (player->GetClass() == CLASS_SHAMAN)
+                if (player->getClass() == CLASS_SHAMAN)
                 {
-                    player->LearnSpell(59547, false);//Gift of Naaru
-                    player->LearnSpell(59540, false);//Shadow Resistance
+                    player->learnSpell(59547, false);//Gift of Naaru
+                    player->learnSpell(59540, false);//Shadow Resistance
                 }
-                if (player->GetClass() == CLASS_SHAMAN)
+                if (player->getClass() == CLASS_SHAMAN)
                 {
-                    player->LearnSpell(28880, false);//Gift of Naaru
-                    player->LearnSpell(59221, false);//Shadow Resistance
+                    player->learnSpell(28880, false);//Gift of Naaru
+                    player->learnSpell(59221, false);//Shadow Resistance
                 }
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 3://Dwarves Selection
@@ -713,100 +713,100 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(2481, false);//Find Treasure
-                player->LearnSpell(20596, false);//Frost Resistance
-                player->LearnSpell(20595, false);//Gun Specialization
-                player->LearnSpell(59224, false);//Mace Specialization
-                player->LearnSpell(20594, false);//Stoneform
+                player->learnSpell(2481, false);//Find Treasure
+                player->learnSpell(20596, false);//Frost Resistance
+                player->learnSpell(20595, false);//Gun Specialization
+                player->learnSpell(59224, false);//Mace Specialization
+                player->learnSpell(20594, false);//Stoneform
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 4://Gnome Selection
@@ -822,100 +822,100 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occur and money is deducted
-                player->LearnSpell(20592, false);//Arcane Resistance
-                player->LearnSpell(20593, false);//Engineering Specialization
-                player->LearnSpell(20589, false);//Escape Artist
-                player->LearnSpell(20591, false);//Expansive Mind
+                player->learnSpell(20592, false);//Arcane Resistance
+                player->learnSpell(20593, false);//Engineering Specialization
+                player->learnSpell(20589, false);//Escape Artist
+                player->learnSpell(20591, false);//Expansive Mind
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 5://Human Selection
@@ -931,100 +931,100 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(20599, false);//Diplomacy
-                player->LearnSpell(59752, false);//Every man for himself
-                player->LearnSpell(20864, false);//Mace Specialization
-                player->LearnSpell(58985, false);//Perception
-                player->LearnSpell(20597, false);//Sword Specialization
-                player->LearnSpell(20598, false);//The Human Spirit
+                player->learnSpell(20599, false);//Diplomacy
+                player->learnSpell(59752, false);//Every man for himself
+                player->learnSpell(20864, false);//Mace Specialization
+                player->learnSpell(58985, false);//Perception
+                player->learnSpell(20597, false);//Sword Specialization
+                player->learnSpell(20598, false);//The Human Spirit
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 6://Night Elf Selection
@@ -1040,102 +1040,102 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(20583, false);//Nature Resistance
-                player->LearnSpell(20582, false);//Quickness
-                player->LearnSpell(58984, false);//Shadowmeld
-                player->LearnSpell(20585, false);//Wisp Spirit
-                if (player->GetClass() == CLASS_DEATH_KNIGHT || player->GetClass() == CLASS_DRUID || player->GetClass() == CLASS_HUNTER || player->GetClass() == CLASS_PRIEST || player->GetClass() == CLASS_ROGUE || player->GetClass() == CLASS_WARRIOR)
+                player->learnSpell(20583, false);//Nature Resistance
+                player->learnSpell(20582, false);//Quickness
+                player->learnSpell(58984, false);//Shadowmeld
+                player->learnSpell(20585, false);//Wisp Spirit
+                if (player->getClass() == CLASS_DEATH_KNIGHT || player->getClass() == CLASS_DRUID || player->getClass() == CLASS_HUNTER || player->getClass() == CLASS_PRIEST || player->getClass() == CLASS_ROGUE || player->getClass() == CLASS_WARRIOR)
                 {
-                    player->LearnSpell(21009, false);//Elusiveness
+                    player->learnSpell(21009, false);//Elusiveness
                 }
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 7://Orc Selection
@@ -1151,112 +1151,112 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(20574, false);//Axe Specialization
-                player->LearnSpell(20573, false);//Hardiness
-                if (player->GetClass() == CLASS_DEATH_KNIGHT)
+                player->learnSpell(20574, false);//Axe Specialization
+                player->learnSpell(20573, false);//Hardiness
+                if (player->getClass() == CLASS_DEATH_KNIGHT)
                 {
-                    player->LearnSpell(54562, false);//Command
+                    player->learnSpell(54562, false);//Command
                 }
-                if (player->GetClass() == CLASS_DEATH_KNIGHT || player->GetClass() == CLASS_HUNTER || player->GetClass() == CLASS_ROGUE || player->GetClass() == CLASS_WARRIOR)
+                if (player->getClass() == CLASS_DEATH_KNIGHT || player->getClass() == CLASS_HUNTER || player->getClass() == CLASS_ROGUE || player->getClass() == CLASS_WARRIOR)
                 {
-                    player->LearnSpell(20572, false);//Blood Fury
+                    player->learnSpell(20572, false);//Blood Fury
                 }
-                if (player->GetClass() == CLASS_DRUID || player->GetClass() == CLASS_PALADIN || player->GetClass() == CLASS_PRIEST || player->GetClass() == CLASS_ROGUE || player->GetClass() == CLASS_WARRIOR)
+                if (player->getClass() == CLASS_DRUID || player->getClass() == CLASS_PALADIN || player->getClass() == CLASS_PRIEST || player->getClass() == CLASS_ROGUE || player->getClass() == CLASS_WARRIOR)
                 {
-                    player->LearnSpell(21563, false);//Command
+                    player->learnSpell(21563, false);//Command
                 }
-                if (player->GetClass() == CLASS_HUNTER)
+                if (player->getClass() == CLASS_HUNTER)
                 {
-                    player->LearnSpell(20576, false);//Command
+                    player->learnSpell(20576, false);//Command
                 }
-                if (player->GetClass() == CLASS_SHAMAN)
+                if (player->getClass() == CLASS_SHAMAN)
                 {
-                    player->LearnSpell(33697, false);//Blood Fury
-                    player->LearnSpell(65222, false);//Command
+                    player->learnSpell(33697, false);//Blood Fury
+                    player->learnSpell(65222, false);//Command
                 }
-                if (player->GetClass() == CLASS_WARLOCK)
+                if (player->getClass() == CLASS_WARLOCK)
                 {
-                    player->LearnSpell(33702, false);//Blood Fury
-                    player->LearnSpell(20575, false);//Command
+                    player->learnSpell(33702, false);//Blood Fury
+                    player->learnSpell(20575, false);//Command
                 }
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 8://Tauren Selection
@@ -1272,100 +1272,100 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(20552, false);//Cultivation
-                player->LearnSpell(20550, false);//Endurance
-                player->LearnSpell(20551, false);//Nature Resistance
-                player->LearnSpell(20549, false);//Warstomp
+                player->learnSpell(20552, false);//Cultivation
+                player->learnSpell(20550, false);//Endurance
+                player->learnSpell(20551, false);//Nature Resistance
+                player->learnSpell(20549, false);//Warstomp
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 9://Troll Selection
@@ -1381,100 +1381,100 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(20557, false);//Beast Slaying
-                player->LearnSpell(26297, false);//Berserking
-                player->LearnSpell(26290, false);//Bow Specialization
-                player->LearnSpell(58943, false);//Da Voodoo Shuffle
-                player->LearnSpell(20555, false);//Regeneration
-                player->LearnSpell(20558, false);//Throwing Specialization
+                player->learnSpell(20557, false);//Beast Slaying
+                player->learnSpell(26297, false);//Berserking
+                player->learnSpell(26290, false);//Bow Specialization
+                player->learnSpell(58943, false);//Da Voodoo Shuffle
+                player->learnSpell(20555, false);//Regeneration
+                player->learnSpell(20558, false);//Throwing Specialization
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Undead:
-                player->RemoveSpell(20577, false, false);// unlearn Cannibalize
-                player->RemoveSpell(20579, false, false);// unlearn Shadow Resistance
-                player->RemoveSpell(5227, false, false);// unlearn Underwater Breating
-                player->RemoveSpell(7744, false, false);// unlearn Will of the Forsaken
+                player->removeSpell(20577, false, false);// unlearn Cannibalize
+                player->removeSpell(20579, false, false);// unlearn Shadow Resistance
+                player->removeSpell(5227, false, false);// unlearn Underwater Breating
+                player->removeSpell(7744, false, false);// unlearn Will of the Forsaken
                 break;
 
             case 10://Undead Selection
@@ -1490,100 +1490,100 @@ public:
                     return true;
                 player->ModifyMoney(int32(-RTS1 * GOLD));//Deducting the money if check passes
                 player->CastSpell(player, 47292);//Level up visual effect to let you know the transaction did occure and money is deducted
-                player->LearnSpell(20577, false);//Cannibalize
-                player->LearnSpell(20579, false);//Shadow Resistance
-                player->LearnSpell(5227, false);//Underwater Breating
-                player->LearnSpell(7744, false);//Will of the Forsaken
+                player->learnSpell(20577, false);//Cannibalize
+                player->learnSpell(20579, false);//Shadow Resistance
+                player->learnSpell(5227, false);//Underwater Breating
+                player->learnSpell(7744, false);//Will of the Forsaken
                 //blood elf:
-                player->RemoveSpell(28877, false, false);// unlearn Arcane Affinity
-                player->RemoveSpell(822, false, false);// unlearn Magic Resistance
+                player->removeSpell(28877, false, false);// unlearn Arcane Affinity
+                player->removeSpell(822, false, false);// unlearn Magic Resistance
                 //~DK
-                player->RemoveSpell(50613, false, false);// unlearn Arcane Torrent
+                player->removeSpell(50613, false, false);// unlearn Arcane Torrent
                 //~Hunter, mage, paladin, priest, warlock
-                player->RemoveSpell(28730, false, false);// unlearn Arcane Torrent
+                player->removeSpell(28730, false, false);// unlearn Arcane Torrent
                 //~Rogue
-                player->RemoveSpell(25046, false, false);// unlearn Arcane Torrent
+                player->removeSpell(25046, false, false);// unlearn Arcane Torrent
                 //Draenei:
-                player->RemoveSpell(28875, false, false);// unlearn Gemcutting
+                player->removeSpell(28875, false, false);// unlearn Gemcutting
                 //~DK
-                player->RemoveSpell(59545, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59539, false, false);// unlearnShadow Resistance
+                player->removeSpell(59545, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59539, false, false);// unlearnShadow Resistance
                 //~DK, Hunter, Paladin, Warrior
-                player->RemoveSpell(6562, false, false);// unlearn Heroic Presence
+                player->removeSpell(6562, false, false);// unlearn Heroic Presence
                 //~Hunter
-                player->RemoveSpell(59543, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59536, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59543, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59536, false, false);// unlearn Shadow Resistance
                 //~Mage
-                player->RemoveSpell(59548, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59541, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59548, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59541, false, false);// unlearn Shadow Resistance
                 //~Mage, Priest, Shaman
-                player->RemoveSpell(28878, false, false);// unlearn Heroic Presence
+                player->removeSpell(28878, false, false);// unlearn Heroic Presence
                 //~Paladin
-                player->RemoveSpell(59542, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59535, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59542, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59535, false, false);// unlearn Shadow Resistance
                 //~Priest
-                player->RemoveSpell(59544, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59538, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59544, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59538, false, false);// unlearn Shadow Resistance
                 //~Shaman
-                player->RemoveSpell(59547, false, false);// unlearn Gift of the Narru
-                player->RemoveSpell(59540, false, false);// unlearn Shadow Resistance
+                player->removeSpell(59547, false, false);// unlearn Gift of the Narru
+                player->removeSpell(59540, false, false);// unlearn Shadow Resistance
                 //~Warrior
-                player->RemoveSpell(28880, false, false);// unlearn Gift of Naaru
-                player->RemoveSpell(59221, false, false);// unlearn Shadow Resistance
+                player->removeSpell(28880, false, false);// unlearn Gift of Naaru
+                player->removeSpell(59221, false, false);// unlearn Shadow Resistance
                 //Dwarven:
-                player->RemoveSpell(2481, false, false);// unlearn Find Treasure
-                player->RemoveSpell(20596, false, false);// unlearn Frost Resistance
-                player->RemoveSpell(20595, false, false);// unlearn Gun Specialization
-                player->RemoveSpell(59224, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(20594, false, false);// unlearn Stoneform
+                player->removeSpell(2481, false, false);// unlearn Find Treasure
+                player->removeSpell(20596, false, false);// unlearn Frost Resistance
+                player->removeSpell(20595, false, false);// unlearn Gun Specialization
+                player->removeSpell(59224, false, false);// unlearn Mace Specialization
+                player->removeSpell(20594, false, false);// unlearn Stoneform
                 //Gnome:
-                player->RemoveSpell(20592, false, false);// unlearn Arcane Resistance
-                player->RemoveSpell(20593, false, false);// unlearn Engineering Specialization
-                player->RemoveSpell(20589, false, false);// unlearn Escape Artist
-                player->RemoveSpell(20591, false, false);// unlearn Expansive Mind
+                player->removeSpell(20592, false, false);// unlearn Arcane Resistance
+                player->removeSpell(20593, false, false);// unlearn Engineering Specialization
+                player->removeSpell(20589, false, false);// unlearn Escape Artist
+                player->removeSpell(20591, false, false);// unlearn Expansive Mind
                 //Human:
-                player->RemoveSpell(20599, false, false);// unlearn Diplomacy
-                player->RemoveSpell(59752, false, false);// unlearn Every man for himself
-                player->RemoveSpell(20864, false, false);// unlearn Mace Specialization
-                player->RemoveSpell(58985, false, false);// unlearn Perception
-                player->RemoveSpell(20597, false, false);// unlearn Sword Specialization
-                player->RemoveSpell(20598, false, false);// unlearn The Human Spirit
+                player->removeSpell(20599, false, false);// unlearn Diplomacy
+                player->removeSpell(59752, false, false);// unlearn Every man for himself
+                player->removeSpell(20864, false, false);// unlearn Mace Specialization
+                player->removeSpell(58985, false, false);// unlearn Perception
+                player->removeSpell(20597, false, false);// unlearn Sword Specialization
+                player->removeSpell(20598, false, false);// unlearn The Human Spirit
                 //Night Elf:
-                player->RemoveSpell(20583, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20582, false, false);// unlearn Quickness
-                player->RemoveSpell(58984, false, false);// unlearn Shadowmeld
-                player->RemoveSpell(20585, false, false);// unlearn Wisp Spirit
+                player->removeSpell(20583, false, false);// unlearn Nature Resistance
+                player->removeSpell(20582, false, false);// unlearn Quickness
+                player->removeSpell(58984, false, false);// unlearn Shadowmeld
+                player->removeSpell(20585, false, false);// unlearn Wisp Spirit
                 //~DK, Hunter, Druid, Hunter, Priest, Rogue, Warrior
-                player->RemoveSpell(21009, false, false);// unlearn Elusiveness
+                player->removeSpell(21009, false, false);// unlearn Elusiveness
                 //Orc:
-                player->RemoveSpell(20574, false, false);// unlearn Axe Specialization
-                player->RemoveSpell(20573, false, false);// unlearn Hardiness
+                player->removeSpell(20574, false, false);// unlearn Axe Specialization
+                player->removeSpell(20573, false, false);// unlearn Hardiness
                 //~DK
-                player->RemoveSpell(54562, false, false);// unlearn Command
+                player->removeSpell(54562, false, false);// unlearn Command
                 //~DK, hunter, rogue, warrior
-                player->RemoveSpell(20572, false, false);// unlearn Blood Fury
+                player->removeSpell(20572, false, false);// unlearn Blood Fury
                 //~Druid, mage, paladin, priest, rogue, warrior
-                player->RemoveSpell(21563, false, false);// unlearn Command
+                player->removeSpell(21563, false, false);// unlearn Command
                 //~Hunter
-                player->RemoveSpell(20576, false, false);// unlearn Command
+                player->removeSpell(20576, false, false);// unlearn Command
                 //~Shaman
-                player->RemoveSpell(33697, false, false);// unlearn Blood fury
-                player->RemoveSpell(65222, false, false);// unlearn Command
+                player->removeSpell(33697, false, false);// unlearn Blood fury
+                player->removeSpell(65222, false, false);// unlearn Command
                 //~Warlock
-                player->RemoveSpell(33702, false, false);// unlearn Blood Fury
-                player->RemoveSpell(20575, false, false);// unlearn Command
+                player->removeSpell(33702, false, false);// unlearn Blood Fury
+                player->removeSpell(20575, false, false);// unlearn Command
                 //Tauren:
-                player->RemoveSpell(20552, false, false);// unlearn Cultivation
-                player->RemoveSpell(20550, false, false);// unlearn Endurance
-                player->RemoveSpell(20551, false, false);// unlearn Nature Resistance
-                player->RemoveSpell(20549, false, false);// unlearn Warstomp
+                player->removeSpell(20552, false, false);// unlearn Cultivation
+                player->removeSpell(20550, false, false);// unlearn Endurance
+                player->removeSpell(20551, false, false);// unlearn Nature Resistance
+                player->removeSpell(20549, false, false);// unlearn Warstomp
                 //Troll:
-                player->RemoveSpell(20557, false, false);// unlearn Beast Slaying
-                player->RemoveSpell(26297, false, false);// unlearn Berserking
-                player->RemoveSpell(26290, false, false);// unlearn Bow Specialization
-                player->RemoveSpell(58943, false, false);// unlearn Da Voodoo Shuffle
-                player->RemoveSpell(20555, false, false);// unlearn Regeneration
-                player->RemoveSpell(20558, false, false);// unlearn Throwing Specialization
+                player->removeSpell(20557, false, false);// unlearn Beast Slaying
+                player->removeSpell(26297, false, false);// unlearn Berserking
+                player->removeSpell(26290, false, false);// unlearn Bow Specialization
+                player->removeSpell(58943, false, false);// unlearn Da Voodoo Shuffle
+                player->removeSpell(20555, false, false);// unlearn Regeneration
+                player->removeSpell(20558, false, false);// unlearn Throwing Specialization
                 break;
 
             default:
