@@ -25,7 +25,7 @@
 
 ## Edit module configuration (optional)
 
-If you need to change the module configuration, go to your server configuration folder (where your worldserver or worldserver.exe is), copy SkipDKModule.conf.dist to SkipDKModule.conf and edit that new file.
+If you need to change the module configuration, go to your server configuration folder (where your worldserver or worldserver.exe is), copy RacialTraitSwap.dist to RacialTraitSwap.conf and edit that new file.
 
 ### Credits ###
 ------------------------------------------------------------------------------------------------------------------
