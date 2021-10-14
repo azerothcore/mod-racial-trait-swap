@@ -2,6 +2,6 @@
 
 ## Update SQL
 
-DB_WORLD_UPDATE_PATHS+=(
+DB_WORLD_CUSTOM_PATHS+=(
 	$MOD_RACIAL_TRAIT_SWAP_ROOT"/sql/world/"
 )
