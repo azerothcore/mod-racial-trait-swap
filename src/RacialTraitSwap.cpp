@@ -193,7 +193,7 @@ public:
 
     npc_race_trait_swap() : CreatureScript("npc_race_trait_swap") { }
 
-    bool OnGossipHello(Player* player, Creature* creature)
+    bool OnGossipHello(Player* player, Creature* creature) override
     {
         char const* localizedEntry;
         switch (player->GetSession()->GetSessionDbcLocale())
