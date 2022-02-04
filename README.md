@@ -13,7 +13,7 @@
 1. Enable in conf
 2. Go into conf and set any features you want to enable or modify
 3. Spawn NPC ID 98888 anywhere and talk to him.
-m
+
 ## Requirements
 
 - Latest AzerothCore Wotlk commit
