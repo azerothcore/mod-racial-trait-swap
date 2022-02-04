@@ -179,7 +179,7 @@ public:
 
     void OnLogin(Player* Player)
     {
-        if (sConfigMgr->GetBoolDefault("Azerothcore.Racial.Trait.Swap.Announce.enable", true))
+        if (sConfigMgr->GetOption<bool>("Azerothcore.Racial.Trait.Swap.Announce.enable", true))
         {
             ChatHandler(Player->GetSession()).SendSysMessage("This server is running the |cff4CFF00Azerothcore Racial Trait Swap NPC |rmodule.");
         }
@@ -214,7 +214,7 @@ public:
 
     bool OnGossipSelect(Player* player, Creature* creature, uint32 /*menuId*/, uint32 gossipListId) override
     {
-        const int32 RTS1 = sConfigMgr->GetIntDefault("Racial.Traits.Swap.Gold", 100);
+        const int32 RTS1 = sConfigMgr->GetOption<uint32>("Racial.Traits.Swap.Gold", 100);
         char const* localizedExit;
         switch (player->GetSession()->GetSessionDbcLocale())
         {
