@@ -14,6 +14,12 @@
 2. Go into conf and set any features you want to enable or modify
 3. Spawn NPC ID 98888 anywhere and talk to him.
 
+## Notice:
+
+Due to the uniquiness of the module you will get this message on the worldconsole, but nothing is broken.
+It is due to the npc not exactly having a gossip menu in the database, the script handles the gossip menu because of the additional locales.
+![image](https://user-images.githubusercontent.com/16887899/152653351-7f49e93c-efa9-4396-aa2e-6bad159920ef.png)
+
 ## Requirements
 
 - Latest AzerothCore Wotlk commit
