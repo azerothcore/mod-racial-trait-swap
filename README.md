@@ -37,4 +37,6 @@ If you need to change the module configuration, go to your server configuration 
 ------------------------------------------------------------------------------------------------------------------
 - [acidmanifesto (MDic)](https://github.com/acidmanifesto/TC-Custom-Scripts/tree/main/335%20TC/Official%20Trinitycore%20Custom%20Scripts/Official%20Merged/Racial%20Swap%20Skills%20Abilities%20NPC)
 - [Jinnaix](https://github.com/Jinnaix)
+- [bench] (https://github.com/benjymansy123)
+
 - AzerothCore: [repository](https://github.com/azerothcore) - [website](http://azerothcore.org/) - [discord chat community](https://discord.gg/PaqQRkd)
