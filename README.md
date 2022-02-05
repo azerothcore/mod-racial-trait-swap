@@ -27,12 +27,10 @@ Please add the adjustment to the conf to have that error message not show up:
 #                     divided by "," without spaces.
 #                     It is implied that you do not use for these NPC dialogs data from "gossip_menu" table.
 #                     Server will skip these IDs during the definitions validation process.
-#        Example:     Creatures.CustomIDs = "190010,55005,999991" - Npc for Transmog, Guild-zone and 1v1-arena modules
 #        Example:     Creatures.CustomIDs = "190010,55005,999991,25462,98888" - Npcs for Transmog, Guild-zone, 1v1-arena modules
 #                                                                               Skip Dk Module, Racial Trait Swap Modules
 #        Default:     ""
 
-Creatures.CustomIDs = "190010"
 Creatures.CustomIDs = "190010,55005,999991,25462,98888"
 ```
 
