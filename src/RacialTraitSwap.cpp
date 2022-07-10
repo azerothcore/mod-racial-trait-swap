@@ -79,105 +79,225 @@
 #define LOCALE_GOLD_7 " Oro."
 #define LOCALE_GOLD_8 " Золото."
 
-#define LOCALE_BES_0 "Blood Elf Racial Trait Swap -"
-#define LOCALE_BES_1 "블러드 엘프 인종 특성 스왑 -"
-#define LOCALE_BES_2 "Échange de traits raciaux des elfes de sang -"
-#define LOCALE_BES_3 "Rassenwechsel der Blutelfen -"
-#define LOCALE_BES_4 "血精靈種族特質交換 -"
-#define LOCALE_BES_5 "血精靈種族特質交換 -"
-#define LOCALE_BES_6 "Intercambio de rasgos raciales de elfos de sangre -"
-#define LOCALE_BES_7 "Intercambio de rasgos raciales de elfos de sangre -"
-#define LOCALE_BES_8 "Обмен расовой особенностью эльфов крови -"
+// female icons
+#define LOCALE_BES_0 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|tBlood Elf Racial Trait Swap -"
+#define LOCALE_BES_1 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|t블러드 엘프 인종 특성 스왑 -"
+#define LOCALE_BES_2 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|tÉchange de traits raciaux des elfes de sang -"
+#define LOCALE_BES_3 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|tRassenwechsel der Blutelfen -"
+#define LOCALE_BES_4 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|t血精靈種族特質交換 -"
+#define LOCALE_BES_5 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|t血精靈種族特質交換 -"
+#define LOCALE_BES_6 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|tIntercambio de rasgos raciales de elfos de sangre -"
+#define LOCALE_BES_7 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|tIntercambio de rasgos raciales de elfos de sangre -"
+#define LOCALE_BES_8 "|TInterface\\icons\\Achievement_Character_Bloodelf_Female:25|tОбмен расовой особенностью эльфов крови -"
 
-#define LOCALE_DRS_0 "Draenei Racial Trait Swap  -"
-#define LOCALE_DRS_1 "드레나이 인종 특성 스왑 -"
-#define LOCALE_DRS_2 "Échange de traits raciaux draeneï -"
-#define LOCALE_DRS_3 "Draenei Rasseneigenschaftstausch -"
-#define LOCALE_DRS_4 "德萊尼人種特質交換 -"
-#define LOCALE_DRS_5 "德萊尼人種特質交換 -"
-#define LOCALE_DRS_6 "Cambio de rasgo racial Draenei -"
-#define LOCALE_DRS_7 "Cambio de rasgo racial Draenei -"
-#define LOCALE_DRS_8 "Обмен расовыми особенностями дренеев -"
+// male icons
+#define LOCALE_BES_9  "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|tBlood Elf Racial Trait Swap -"
+#define LOCALE_BES_10 "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|t블러드 엘프 인종 특성 스왑 -"
+#define LOCALE_BES_11 "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|tÉchange de traits raciaux des elfes de sang -"
+#define LOCALE_BES_12 "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|tRassenwechsel der Blutelfen -"
+#define LOCALE_BES_13 "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|t血精靈種族特質交換 -"
+#define LOCALE_BES_14 "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|t血精靈種族特質交換 -"
+#define LOCALE_BES_15 "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|tIntercambio de rasgos raciales de elfos de sangre -"
+#define LOCALE_BES_16 "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|tIntercambio de rasgos raciales de elfos de sangre -"
+#define LOCALE_BES_17 "|TInterface\\icons\\Achievement_Character_Bloodelf_Male:25|tОбмен расовой особенностью эльфов крови -"
 
-#define LOCALE_DWS_0 "Dwarven Racial Trait Swap -"
-#define LOCALE_DWS_1 "드워프 종족 특성 전환 -"
-#define LOCALE_DWS_2 "Échange de traits raciaux nains -"
-#define LOCALE_DWS_3 "Tausch der Rasseneigenschaften der Zwerge -"
-#define LOCALE_DWS_4 "矮人種族特質交換 -"
-#define LOCALE_DWS_5 "矮人種族特質交換 -"
-#define LOCALE_DWS_6 "Intercambio de rasgos raciales enanos -"
-#define LOCALE_DWS_7 "Intercambio de rasgos raciales enanos -"
-#define LOCALE_DWS_8 "Обмен расовыми особенностями гномов -"
+// female icons
+#define LOCALE_DRS_0 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|tDraenei Racial Trait Swap  -"
+#define LOCALE_DRS_1 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|t드레나이 인종 특성 스왑 -"
+#define LOCALE_DRS_2 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|tÉchange de traits raciaux draeneï -"
+#define LOCALE_DRS_3 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|tDraenei Rasseneigenschaftstausch -"
+#define LOCALE_DRS_4 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|t德萊尼人種特質交換 -"
+#define LOCALE_DRS_5 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|t德萊尼人種特質交換 -"
+#define LOCALE_DRS_6 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|tCambio de rasgo racial Draenei -"
+#define LOCALE_DRS_7 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|tCambio de rasgo racial Draenei -"
+#define LOCALE_DRS_8 "|TInterface\\icons\\Achievement_Character_Draenei_Female:25|tОбмен расовыми особенностями дренеев -"
 
-#define LOCALE_GNS_0 "Gnome Racial Trait Swap -"
-#define LOCALE_GNS_1 "그놈 인종 특성 스왑 -"
-#define LOCALE_GNS_2 "Échange de traits raciaux de gnome -"
-#define LOCALE_GNS_3 "Tausch der Rasseneigenschaft Gnom -"
-#define LOCALE_GNS_4 "侏儒種族特質交換 -"
-#define LOCALE_GNS_5 "侏儒種族特質交換 -"
-#define LOCALE_GNS_6 "Cambio de rasgo racial de gnomo -"
-#define LOCALE_GNS_7 "Cambio de rasgo racial de gnomo -"
-#define LOCALE_GNS_8 "Смена расовой особенности гномов -"
+//male icons
+#define LOCALE_DRS_9 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|tDraenei Racial Trait Swap  -"
+#define LOCALE_DRS_10 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|t드레나이 인종 특성 스왑 -"
+#define LOCALE_DRS_11 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|tÉchange de traits raciaux draeneï -"
+#define LOCALE_DRS_12 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|tDraenei Rasseneigenschaftstausch -"
+#define LOCALE_DRS_13 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|t德萊尼人種特質交換 -"
+#define LOCALE_DRS_14 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|t德萊尼人種特質交換 -"
+#define LOCALE_DRS_15 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|tCambio de rasgo racial Draenei -"
+#define LOCALE_DRS_16 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|tCambio de rasgo racial Draenei -"
+#define LOCALE_DRS_17 "|TInterface\\icons\\Achievement_Character_Draenei_Male:25|tОбмен расовыми особенностями дренеев -"
 
-#define LOCALE_HUS_0 "Human Racial Trait Swap -"
-#define LOCALE_HUS_1 "인간 인종 특성 교환 -"
-#define LOCALE_HUS_2 "Échange de traits raciaux humains -"
-#define LOCALE_HUS_3 "Austausch von menschlichen Rassenmerkmalen -"
-#define LOCALE_HUS_4 "人類種族特質交換 -"
-#define LOCALE_HUS_5 "人類種族特質交換 -"
-#define LOCALE_HUS_6 "Intercambio de rasgos raciales humanos -"
-#define LOCALE_HUS_7 "Intercambio de rasgos raciales humanos -"
-#define LOCALE_HUS_8 "Обмен расовыми особенностями человека -"
+//female icons
+#define LOCALE_DWS_0 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|tDwarven Racial Trait Swap -"
+#define LOCALE_DWS_1 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|t드워프 종족 특성 전환 -"
+#define LOCALE_DWS_2 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|tÉchange de traits raciaux nains -"
+#define LOCALE_DWS_3 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|tTausch der Rasseneigenschaften der Zwerge -"
+#define LOCALE_DWS_4 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|t矮人種族特質交換 -"
+#define LOCALE_DWS_5 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|t矮人種族特質交換 -"
+#define LOCALE_DWS_6 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|tIntercambio de rasgos raciales enanos -"
+#define LOCALE_DWS_7 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|tIntercambio de rasgos raciales enanos -"
+#define LOCALE_DWS_8 "|TInterface\\icons\\Achievement_Character_Dwarf_Female:25|tОбмен расовыми особенностями гномов -"
 
-#define LOCALE_NES_0 "Night Elf Racial Trait Swap -"
-#define LOCALE_NES_1 "나이트 엘프 인종 특성 스왑 -"
-#define LOCALE_NES_2 "Échange de traits raciaux des elfes de la nuit -"
-#define LOCALE_NES_3 "Tausch der Nachtelfen-Rasseneigenschaft -"
-#define LOCALE_NES_4 "暗夜精靈種族特質交換 -"
-#define LOCALE_NES_5 "暗夜精靈種族特質交換 -"
-#define LOCALE_NES_6 "Cambio de rasgo racial elfo de la noche -"
-#define LOCALE_NES_7 "Cambio de rasgo racial elfo de la noche -"
-#define LOCALE_NES_8 "Обмен расовыми особенностями ночных эльфов -"
+//male icons
+#define LOCALE_DWS_9 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|tDwarven Racial Trait Swap -"
+#define LOCALE_DWS_10 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|t드워프 종족 특성 전환 -"
+#define LOCALE_DWS_11 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|tÉchange de traits raciaux nains -"
+#define LOCALE_DWS_12 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|tTausch der Rasseneigenschaften der Zwerge -"
+#define LOCALE_DWS_13 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|t矮人種族特質交換 -"
+#define LOCALE_DWS_14 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|t矮人種族特質交換 -"
+#define LOCALE_DWS_15 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|tIntercambio de rasgos raciales enanos -"
+#define LOCALE_DWS_16 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|tIntercambio de rasgos raciales enanos -"
+#define LOCALE_DWS_17 "|TInterface\\icons\\Achievement_Character_Dwarf_Male:25|tОбмен расовыми особенностями гномов -"
 
-#define LOCALE_ORC_0 "Orc Racial Trait Swap -"
-#define LOCALE_ORC_1 "오크 종족 특성 교환 -"
-#define LOCALE_ORC_2 "Échange de traits raciaux orques -"
-#define LOCALE_ORC_3 "Austausch der Ork-Rassenmerkmale -"
-#define LOCALE_ORC_4 "獸人種族特質交換 -"
-#define LOCALE_ORC_5 "獸人種族特質交換 -"
-#define LOCALE_ORC_6 "Intercambio de rasgos raciales de orcos -"
-#define LOCALE_ORC_7 "Intercambio de rasgos raciales de orcos -"
-#define LOCALE_ORC_8 "Смена расовой особенности орков -"
+//female icons
+#define LOCALE_GNS_0 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|tGnome Racial Trait Swap -"
+#define LOCALE_GNS_1 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|t그놈 인종 특성 스왑 -"
+#define LOCALE_GNS_2 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|tÉchange de traits raciaux de gnome -"
+#define LOCALE_GNS_3 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|tTausch der Rasseneigenschaft Gnom -"
+#define LOCALE_GNS_4 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|t侏儒種族特質交換 -"
+#define LOCALE_GNS_5 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|t侏儒種族特質交換 -"
+#define LOCALE_GNS_6 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|tCambio de rasgo racial de gnomo -"
+#define LOCALE_GNS_7 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|tCambio de rasgo racial de gnomo -"
+#define LOCALE_GNS_8 "|TInterface\\icons\\Achievement_Character_Gnome_Female:25|tСмена расовой особенности гномов -"
 
-#define LOCALE_TUR_0 "Tauren Racial Trait Swap -"
-#define LOCALE_TUR_1 "타우렌 인종 특성 교환 -"
-#define LOCALE_TUR_2 "Échange de traits raciaux Tauren -"
-#define LOCALE_TUR_3 "Tauren Rasseneigenschaftstausch -"
-#define LOCALE_TUR_4 "牛頭人種族特質交換 -"
-#define LOCALE_TUR_5 "牛頭人種族特質交換 -"
-#define LOCALE_TUR_6 "Intercambio de rasgos raciales tauren -"
-#define LOCALE_TUR_7 "Intercambio de rasgos raciales tauren -"
-#define LOCALE_TUR_8 "Обмен расовыми особенностями тауренов -"
+//male icons
+#define LOCALE_GNS_9 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|tGnome Racial Trait Swap -"
+#define LOCALE_GNS_10 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|t그놈 인종 특성 스왑 -"
+#define LOCALE_GNS_11 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|tÉchange de traits raciaux de gnome -"
+#define LOCALE_GNS_12 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|tTausch der Rasseneigenschaft Gnom -"
+#define LOCALE_GNS_13 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|t侏儒種族特質交換 -"
+#define LOCALE_GNS_14 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|t侏儒種族特質交換 -"
+#define LOCALE_GNS_15 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|tCambio de rasgo racial de gnomo -"
+#define LOCALE_GNS_16 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|tCambio de rasgo racial de gnomo -"
+#define LOCALE_GNS_17 "|TInterface\\icons\\Achievement_Character_Gnome_Male:25|tСмена расовой особенности гномов -"
 
-#define LOCALE_TRL_0 "Troll Racial Trait Swap -"
-#define LOCALE_TRL_1 "트롤 인종 특성 교환 -"
-#define LOCALE_TRL_2 "Échange de traits raciaux de troll -"
-#define LOCALE_TRL_3 "Troll-Rasseneigenschaftstausch -"
-#define LOCALE_TRL_4 "巨魔種族特質交換 -"
-#define LOCALE_TRL_5 "巨魔種族特質交換 -"
-#define LOCALE_TRL_6 "Cambio de rasgo racial de trol -"
-#define LOCALE_TRL_7 "Cambio de rasgo racial de trol -"
-#define LOCALE_TRL_8 "Обмен расовой особенности троллей -"
+//female icons
+#define LOCALE_HUS_0 "|TInterface\\icons\\Achievement_Character_Human_Female:25|tHuman Racial Trait Swap -"
+#define LOCALE_HUS_1 "|TInterface\\icons\\Achievement_Character_Human_Female:25|t인간 인종 특성 교환 -"
+#define LOCALE_HUS_2 "|TInterface\\icons\\Achievement_Character_Human_Female:25|tÉchange de traits raciaux humains -"
+#define LOCALE_HUS_3 "|TInterface\\icons\\Achievement_Character_Human_Female:25|tAustausch von menschlichen Rassenmerkmalen -"
+#define LOCALE_HUS_4 "|TInterface\\icons\\Achievement_Character_Human_Female:25|t人類種族特質交換 -"
+#define LOCALE_HUS_5 "|TInterface\\icons\\Achievement_Character_Human_Female:25|t人類種族特質交換 -"
+#define LOCALE_HUS_6 "|TInterface\\icons\\Achievement_Character_Human_Female:25|tIntercambio de rasgos raciales humanos -"
+#define LOCALE_HUS_7 "|TInterface\\icons\\Achievement_Character_Human_Female:25|tIntercambio de rasgos raciales humanos -"
+#define LOCALE_HUS_8 "|TInterface\\icons\\Achievement_Character_Human_Female:25|tОбмен расовыми особенностями человека -"
 
-#define LOCALE_UND_0 "Undead Racial Trait Swap -"
-#define LOCALE_UND_1 "언데드 인종 특성 스왑 -"
-#define LOCALE_UND_2 "Échange de traits raciaux morts-vivants -"
-#define LOCALE_UND_3 "Untoter Rassenmerkmalentausch -"
-#define LOCALE_UND_4 "亡靈種族特質交換 -"
-#define LOCALE_UND_5 "亡靈種族特質交換 -"
-#define LOCALE_UND_6 "Intercambio de rasgos raciales no muertos -"
-#define LOCALE_UND_7 "Intercambio de rasgos raciales no muertos -"
-#define LOCALE_UND_8 "Смена расовой особенности нежити -"
+//male icons
+#define LOCALE_HUS_9 "|TInterface\\icons\\Achievement_Character_Human_Male:25|tHuman Racial Trait Swap -"
+#define LOCALE_HUS_10 "|TInterface\\icons\\Achievement_Character_Human_Male:25|t인간 인종 특성 교환 -"
+#define LOCALE_HUS_11 "|TInterface\\icons\\Achievement_Character_Human_Male:25|tÉchange de traits raciaux humains -"
+#define LOCALE_HUS_12 "|TInterface\\icons\\Achievement_Character_Human_Male:25|tAustausch von menschlichen Rassenmerkmalen -"
+#define LOCALE_HUS_13 "|TInterface\\icons\\Achievement_Character_Human_Male:25|t人類種族特質交換 -"
+#define LOCALE_HUS_14 "|TInterface\\icons\\Achievement_Character_Human_Male:25|t人類種族特質交換 -"
+#define LOCALE_HUS_15 "|TInterface\\icons\\Achievement_Character_Human_Male:25|tIntercambio de rasgos raciales humanos -"
+#define LOCALE_HUS_16 "|TInterface\\icons\\Achievement_Character_Human_Male:25|tIntercambio de rasgos raciales humanos -"
+#define LOCALE_HUS_17 "|TInterface\\icons\\Achievement_Character_Human_Male:25|tОбмен расовыми особенностями человека -"
+
+//female icons
+#define LOCALE_NES_0 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|tNight Elf Racial Trait Swap -"
+#define LOCALE_NES_1 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|t나이트 엘프 인종 특성 스왑 -"
+#define LOCALE_NES_2 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|tÉchange de traits raciaux des elfes de la nuit -"
+#define LOCALE_NES_3 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|tTausch der Nachtelfen-Rasseneigenschaft -"
+#define LOCALE_NES_4 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|t暗夜精靈種族特質交換 -"
+#define LOCALE_NES_5 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|t暗夜精靈種族特質交換 -"
+#define LOCALE_NES_6 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|tCambio de rasgo racial elfo de la noche -"
+#define LOCALE_NES_7 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|tCambio de rasgo racial elfo de la noche -"
+#define LOCALE_NES_8 "|TInterface\\icons\\Achievement_Character_Nightelf_Female:25|tОбмен расовыми особенностями ночных эльфов -"
+
+//male icons
+#define LOCALE_NES_9 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|tNight Elf Racial Trait Swap -"
+#define LOCALE_NES_10 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|t나이트 엘프 인종 특성 스왑 -"
+#define LOCALE_NES_11 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|tÉchange de traits raciaux des elfes de la nuit -"
+#define LOCALE_NES_12 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|tTausch der Nachtelfen-Rasseneigenschaft -"
+#define LOCALE_NES_13 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|t暗夜精靈種族特質交換 -"
+#define LOCALE_NES_14 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|t暗夜精靈種族特質交換 -"
+#define LOCALE_NES_15 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|tCambio de rasgo racial elfo de la noche -"
+#define LOCALE_NES_16 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|tCambio de rasgo racial elfo de la noche -"
+#define LOCALE_NES_17 "|TInterface\\icons\\Achievement_Character_Nightelf_Male:25|tОбмен расовыми особенностями ночных эльфов -"
+
+//female icons
+#define LOCALE_ORC_0 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|tOrc Racial Trait Swap -"
+#define LOCALE_ORC_1 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|t오크 종족 특성 교환 -"
+#define LOCALE_ORC_2 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|tÉchange de traits raciaux orques -"
+#define LOCALE_ORC_3 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|tAustausch der Ork-Rassenmerkmale -"
+#define LOCALE_ORC_4 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|t獸人種族特質交換 -"
+#define LOCALE_ORC_5 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|t獸人種族特質交換 -"
+#define LOCALE_ORC_6 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|tIntercambio de rasgos raciales de orcos -"
+#define LOCALE_ORC_7 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|tIntercambio de rasgos raciales de orcos -"
+#define LOCALE_ORC_8 "|TInterface\\icons\\Achievement_Character_Orc_Female:25|tСмена расовой особенности орков -"
+
+//male icons
+#define LOCALE_ORC_9 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|tOrc Racial Trait Swap -"
+#define LOCALE_ORC_10 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|t오크 종족 특성 교환 -"
+#define LOCALE_ORC_11 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|tÉchange de traits raciaux orques -"
+#define LOCALE_ORC_12 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|tAustausch der Ork-Rassenmerkmale -"
+#define LOCALE_ORC_13 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|t獸人種族特質交換 -"
+#define LOCALE_ORC_14 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|t獸人種族特質交換 -"
+#define LOCALE_ORC_15 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|tIntercambio de rasgos raciales de orcos -"
+#define LOCALE_ORC_16 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|tIntercambio de rasgos raciales de orcos -"
+#define LOCALE_ORC_17 "|TInterface\\icons\\Achievement_Character_Orc_Male:25|tСмена расовой особенности орков -"
+
+//female icons
+#define LOCALE_TUR_0 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|tTauren Racial Trait Swap -"
+#define LOCALE_TUR_1 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|t타우렌 인종 특성 교환 -"
+#define LOCALE_TUR_2 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|tÉchange de traits raciaux Tauren -"
+#define LOCALE_TUR_3 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|tTauren Rasseneigenschaftstausch -"
+#define LOCALE_TUR_4 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|t牛頭人種族特質交換 -"
+#define LOCALE_TUR_5 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|t牛頭人種族特質交換 -"
+#define LOCALE_TUR_6 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|tIntercambio de rasgos raciales tauren -"
+#define LOCALE_TUR_7 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|tIntercambio de rasgos raciales tauren -"
+#define LOCALE_TUR_8 "|TInterface\\icons\\Achievement_Character_Tauren_Female:25|tОбмен расовыми особенностями тауренов -"
+
+//male icons
+#define LOCALE_TUR_9 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|tTauren Racial Trait Swap -"
+#define LOCALE_TUR_10 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|t타우렌 인종 특성 교환 -"
+#define LOCALE_TUR_11 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|tÉchange de traits raciaux Tauren -"
+#define LOCALE_TUR_12 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|tTauren Rasseneigenschaftstausch -"
+#define LOCALE_TUR_13 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|t牛頭人種族特質交換 -"
+#define LOCALE_TUR_14 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|t牛頭人種族特質交換 -"
+#define LOCALE_TUR_15 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|tIntercambio de rasgos raciales tauren -"
+#define LOCALE_TUR_16 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|tIntercambio de rasgos raciales tauren -"
+#define LOCALE_TUR_17 "|TInterface\\icons\\Achievement_Character_Tauren_Male:25|tОбмен расовыми особенностями тауренов -"
+
+//female icons
+#define LOCALE_TRL_0 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|tTroll Racial Trait Swap -"
+#define LOCALE_TRL_1 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|t트롤 인종 특성 교환 -"
+#define LOCALE_TRL_2 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|tÉchange de traits raciaux de troll -"
+#define LOCALE_TRL_3 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|tTroll-Rasseneigenschaftstausch -"
+#define LOCALE_TRL_4 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|t巨魔種族特質交換 -"
+#define LOCALE_TRL_5 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|t巨魔種族特質交換 -"
+#define LOCALE_TRL_6 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|tCambio de rasgo racial de trol -"
+#define LOCALE_TRL_7 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|tCambio de rasgo racial de trol -"
+#define LOCALE_TRL_8 "|TInterface\\icons\\Achievement_Character_Troll_Female:25|tОбмен расовой особенности троллей -"
+
+//male icons
+#define LOCALE_TRL_9 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|tTroll Racial Trait Swap -"
+#define LOCALE_TRL_10 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|t트롤 인종 특성 교환 -"
+#define LOCALE_TRL_11 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|tÉchange de traits raciaux de troll -"
+#define LOCALE_TRL_12 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|tTroll-Rasseneigenschaftstausch -"
+#define LOCALE_TRL_13 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|t巨魔種族特質交換 -"
+#define LOCALE_TRL_14 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|t巨魔種族特質交換 -"
+#define LOCALE_TRL_15 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|tCambio de rasgo racial de trol -"
+#define LOCALE_TRL_16 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|tCambio de rasgo racial de trol -"
+#define LOCALE_TRL_17 "|TInterface\\icons\\Achievement_Character_Troll_Male:25|tОбмен расовой особенности троллей -"
+
+//female icons
+#define LOCALE_UND_0 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|tUndead Racial Trait Swap -"
+#define LOCALE_UND_1 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|t언데드 인종 특성 스왑 -"
+#define LOCALE_UND_2 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|tÉchange de traits raciaux morts-vivants -"
+#define LOCALE_UND_3 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|tUntoter Rassenmerkmalentausch -"
+#define LOCALE_UND_4 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|t亡靈種族特質交換 -"
+#define LOCALE_UND_5 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|t亡靈種族特質交換 -"
+#define LOCALE_UND_6 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|tIntercambio de rasgos raciales no muertos -"
+#define LOCALE_UND_7 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|tIntercambio de rasgos raciales no muertos -"
+#define LOCALE_UND_8 "|TInterface\\icons\\Achievement_Character_Undead_Female:25|tСмена расовой особенности нежити -"
+
+//male icons
+#define LOCALE_UND_9 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|tUndead Racial Trait Swap -"
+#define LOCALE_UND_10 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|t언데드 인종 특성 스왑 -"
+#define LOCALE_UND_11 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|tÉchange de traits raciaux morts-vivants -"
+#define LOCALE_UND_12 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|tUntoter Rassenmerkmalentausch -"
+#define LOCALE_UND_13 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|t亡靈種族特質交換 -"
+#define LOCALE_UND_14 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|t亡靈種族特質交換 -"
+#define LOCALE_UND_15 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|tIntercambio de rasgos raciales no muertos -"
+#define LOCALE_UND_16 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|tIntercambio de rasgos raciales no muertos -"
+#define LOCALE_UND_17 "|TInterface\\icons\\Achievement_Character_Undead_Male:25|tСмена расовой особенности нежити -"
 
 class Azerothcore_Race_Trait_announce : public PlayerScript
 {
@@ -204,15 +324,15 @@ public:
         char const* localizedEntry;
         switch (player->GetSession()->GetSessionDbcLocale())
         {
-        case LOCALE_koKR: localizedEntry = LOCALE_RACESWAP_1; break;
-        case LOCALE_frFR: localizedEntry = LOCALE_RACESWAP_2; break;
-        case LOCALE_deDE: localizedEntry = LOCALE_RACESWAP_3; break;
-        case LOCALE_zhCN: localizedEntry = LOCALE_RACESWAP_4; break;
-        case LOCALE_zhTW: localizedEntry = LOCALE_RACESWAP_5; break;
-        case LOCALE_esES: localizedEntry = LOCALE_RACESWAP_6; break;
-        case LOCALE_esMX: localizedEntry = LOCALE_RACESWAP_7; break;
-        case LOCALE_ruRU: localizedEntry = LOCALE_RACESWAP_8; break;
-        case LOCALE_enUS: default: localizedEntry = LOCALE_RACESWAP_0;
+            case LOCALE_koKR: localizedEntry = LOCALE_RACESWAP_1; break;
+            case LOCALE_frFR: localizedEntry = LOCALE_RACESWAP_2; break;
+            case LOCALE_deDE: localizedEntry = LOCALE_RACESWAP_3; break;
+            case LOCALE_zhCN: localizedEntry = LOCALE_RACESWAP_4; break;
+            case LOCALE_zhTW: localizedEntry = LOCALE_RACESWAP_5; break;
+            case LOCALE_esES: localizedEntry = LOCALE_RACESWAP_6; break;
+            case LOCALE_esMX: localizedEntry = LOCALE_RACESWAP_7; break;
+            case LOCALE_ruRU: localizedEntry = LOCALE_RACESWAP_8; break;
+            case LOCALE_enUS: default: localizedEntry = LOCALE_RACESWAP_0;
         }
         AddGossipItemFor(player, GOSSIP_ICON_TRAINER, localizedEntry, GOSSIP_SENDER_MAIN, 11);
         SendGossipMenuFor(player, 98888, creature->GetGUID());
@@ -223,174 +343,305 @@ public:
     {
         const int32 RTS1 = sConfigMgr->GetOption<uint32>("Racial.Traits.Swap.Gold", 100);
         char const* localizedExit;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedExit = LOCALE_EXIT_1; break;
-        case LOCALE_frFR: localizedExit = LOCALE_EXIT_2; break;
-        case LOCALE_deDE: localizedExit = LOCALE_EXIT_3; break;
-        case LOCALE_zhCN: localizedExit = LOCALE_EXIT_4; break;
-        case LOCALE_zhTW: localizedExit = LOCALE_EXIT_5; break;
-        case LOCALE_esES: localizedExit = LOCALE_EXIT_6; break;
-        case LOCALE_esMX: localizedExit = LOCALE_EXIT_7; break;
-        case LOCALE_ruRU: localizedExit = LOCALE_EXIT_8; break;
-        case LOCALE_enUS: default: localizedExit = LOCALE_EXIT_0;
-        }
         char const* localizedBack;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedBack = LOCALE_BACK_1; break;
-        case LOCALE_frFR: localizedBack = LOCALE_BACK_2; break;
-        case LOCALE_deDE: localizedBack = LOCALE_BACK_3; break;
-        case LOCALE_zhCN: localizedBack = LOCALE_BACK_4; break;
-        case LOCALE_zhTW: localizedBack = LOCALE_BACK_5; break;
-        case LOCALE_esES: localizedBack = LOCALE_BACK_6; break;
-        case LOCALE_esMX: localizedBack = LOCALE_BACK_7; break;
-        case LOCALE_ruRU: localizedBack = LOCALE_BACK_8; break;
-        case LOCALE_enUS: default: localizedBack = LOCALE_BACK_0;
-        }
         char const* localizedGold;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedGold = LOCALE_GOLD_1; break;
-        case LOCALE_frFR: localizedGold = LOCALE_GOLD_2; break;
-        case LOCALE_deDE: localizedGold = LOCALE_GOLD_3; break;
-        case LOCALE_zhCN: localizedGold = LOCALE_GOLD_4; break;
-        case LOCALE_zhTW: localizedGold = LOCALE_GOLD_5; break;
-        case LOCALE_esES: localizedGold = LOCALE_GOLD_6; break;
-        case LOCALE_esMX: localizedGold = LOCALE_GOLD_7; break;
-        case LOCALE_ruRU: localizedGold = LOCALE_GOLD_8; break;
-        case LOCALE_enUS: default: localizedGold = LOCALE_GOLD_0;
-        }
         char const* localizedBES;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedBES = LOCALE_BES_1; break;
-        case LOCALE_frFR: localizedBES = LOCALE_BES_2; break;
-        case LOCALE_deDE: localizedBES = LOCALE_BES_3; break;
-        case LOCALE_zhCN: localizedBES = LOCALE_BES_4; break;
-        case LOCALE_zhTW: localizedBES = LOCALE_BES_5; break;
-        case LOCALE_esES: localizedBES = LOCALE_BES_6; break;
-        case LOCALE_esMX: localizedBES = LOCALE_BES_7; break;
-        case LOCALE_ruRU: localizedBES = LOCALE_BES_8; break;
-        case LOCALE_enUS: default: localizedBES = LOCALE_BES_0;
-        }
         char const* localizedDRS;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedDRS = LOCALE_DRS_1; break;
-        case LOCALE_frFR: localizedDRS = LOCALE_DRS_2; break;
-        case LOCALE_deDE: localizedDRS = LOCALE_DRS_3; break;
-        case LOCALE_zhCN: localizedDRS = LOCALE_DRS_4; break;
-        case LOCALE_zhTW: localizedDRS = LOCALE_DRS_5; break;
-        case LOCALE_esES: localizedDRS = LOCALE_DRS_6; break;
-        case LOCALE_esMX: localizedDRS = LOCALE_DRS_7; break;
-        case LOCALE_ruRU: localizedDRS = LOCALE_DRS_8; break;
-        case LOCALE_enUS: default: localizedDRS = LOCALE_DRS_0;
-        }
         char const* localizedDWS;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedDWS = LOCALE_DWS_1; break;
-        case LOCALE_frFR: localizedDWS = LOCALE_DWS_2; break;
-        case LOCALE_deDE: localizedDWS = LOCALE_DWS_3; break;
-        case LOCALE_zhCN: localizedDWS = LOCALE_DWS_4; break;
-        case LOCALE_zhTW: localizedDWS = LOCALE_DWS_5; break;
-        case LOCALE_esES: localizedDWS = LOCALE_DWS_6; break;
-        case LOCALE_esMX: localizedDWS = LOCALE_DWS_7; break;
-        case LOCALE_ruRU: localizedDWS = LOCALE_DWS_8; break;
-        case LOCALE_enUS: default: localizedDWS = LOCALE_DWS_0;
-        }
         char const* localizedGNS;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedGNS = LOCALE_GNS_1; break;
-        case LOCALE_frFR: localizedGNS = LOCALE_GNS_2; break;
-        case LOCALE_deDE: localizedGNS = LOCALE_GNS_3; break;
-        case LOCALE_zhCN: localizedGNS = LOCALE_GNS_4; break;
-        case LOCALE_zhTW: localizedGNS = LOCALE_GNS_5; break;
-        case LOCALE_esES: localizedGNS = LOCALE_GNS_6; break;
-        case LOCALE_esMX: localizedGNS = LOCALE_GNS_7; break;
-        case LOCALE_ruRU: localizedGNS = LOCALE_GNS_8; break;
-        case LOCALE_enUS: default: localizedGNS = LOCALE_GNS_0;
-        }
         char const* localizedHUS;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedHUS = LOCALE_HUS_1; break;
-        case LOCALE_frFR: localizedHUS = LOCALE_HUS_2; break;
-        case LOCALE_deDE: localizedHUS = LOCALE_HUS_3; break;
-        case LOCALE_zhCN: localizedHUS = LOCALE_HUS_4; break;
-        case LOCALE_zhTW: localizedHUS = LOCALE_HUS_5; break;
-        case LOCALE_esES: localizedHUS = LOCALE_HUS_6; break;
-        case LOCALE_esMX: localizedHUS = LOCALE_HUS_7; break;
-        case LOCALE_ruRU: localizedHUS = LOCALE_HUS_8; break;
-        case LOCALE_enUS: default: localizedHUS = LOCALE_HUS_0;
-        }
         char const* localizedNES;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedNES = LOCALE_NES_1; break;
-        case LOCALE_frFR: localizedNES = LOCALE_NES_2; break;
-        case LOCALE_deDE: localizedNES = LOCALE_NES_3; break;
-        case LOCALE_zhCN: localizedNES = LOCALE_NES_4; break;
-        case LOCALE_zhTW: localizedNES = LOCALE_NES_5; break;
-        case LOCALE_esES: localizedNES = LOCALE_NES_6; break;
-        case LOCALE_esMX: localizedNES = LOCALE_NES_7; break;
-        case LOCALE_ruRU: localizedNES = LOCALE_NES_8; break;
-        case LOCALE_enUS: default: localizedNES = LOCALE_NES_0;
-        }
         char const* localizedORC;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedORC = LOCALE_ORC_1; break;
-        case LOCALE_frFR: localizedORC = LOCALE_ORC_2; break;
-        case LOCALE_deDE: localizedORC = LOCALE_ORC_3; break;
-        case LOCALE_zhCN: localizedORC = LOCALE_ORC_4; break;
-        case LOCALE_zhTW: localizedORC = LOCALE_ORC_5; break;
-        case LOCALE_esES: localizedORC = LOCALE_ORC_6; break;
-        case LOCALE_esMX: localizedORC = LOCALE_ORC_7; break;
-        case LOCALE_ruRU: localizedORC = LOCALE_ORC_8; break;
-        case LOCALE_enUS: default: localizedORC = LOCALE_ORC_0;
-        }
         char const* localizedTUR;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedTUR = LOCALE_TUR_1; break;
-        case LOCALE_frFR: localizedTUR = LOCALE_TUR_2; break;
-        case LOCALE_deDE: localizedTUR = LOCALE_TUR_3; break;
-        case LOCALE_zhCN: localizedTUR = LOCALE_TUR_4; break;
-        case LOCALE_zhTW: localizedTUR = LOCALE_TUR_5; break;
-        case LOCALE_esES: localizedTUR = LOCALE_TUR_6; break;
-        case LOCALE_esMX: localizedTUR = LOCALE_TUR_7; break;
-        case LOCALE_ruRU: localizedTUR = LOCALE_TUR_8; break;
-        case LOCALE_enUS: default: localizedTUR = LOCALE_TUR_0;
-        }
         char const* localizedTRL;
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-        case LOCALE_koKR: localizedTRL = LOCALE_TRL_1; break;
-        case LOCALE_frFR: localizedTRL = LOCALE_TRL_2; break;
-        case LOCALE_deDE: localizedTRL = LOCALE_TRL_3; break;
-        case LOCALE_zhCN: localizedTRL = LOCALE_TRL_4; break;
-        case LOCALE_zhTW: localizedTRL = LOCALE_TRL_5; break;
-        case LOCALE_esES: localizedTRL = LOCALE_TRL_6; break;
-        case LOCALE_esMX: localizedTRL = LOCALE_TRL_7; break;
-        case LOCALE_ruRU: localizedTRL = LOCALE_TRL_8; break;
-        case LOCALE_enUS: default: localizedTRL = LOCALE_TRL_0;
-        }
         char const* localizedUND;
         switch (player->GetSession()->GetSessionDbcLocale())
         {
-        case LOCALE_koKR: localizedUND = LOCALE_UND_1; break;
-        case LOCALE_frFR: localizedUND = LOCALE_UND_2; break;
-        case LOCALE_deDE: localizedUND = LOCALE_UND_3; break;
-        case LOCALE_zhCN: localizedUND = LOCALE_UND_4; break;
-        case LOCALE_zhTW: localizedUND = LOCALE_UND_5; break;
-        case LOCALE_esES: localizedUND = LOCALE_UND_6; break;
-        case LOCALE_esMX: localizedUND = LOCALE_UND_7; break;
-        case LOCALE_ruRU: localizedUND = LOCALE_UND_8; break;
-        case LOCALE_enUS: default: localizedUND = LOCALE_UND_0;
+            case LOCALE_koKR: localizedExit = LOCALE_EXIT_1; break;
+            case LOCALE_frFR: localizedExit = LOCALE_EXIT_2; break;
+            case LOCALE_deDE: localizedExit = LOCALE_EXIT_3; break;
+            case LOCALE_zhCN: localizedExit = LOCALE_EXIT_4; break;
+            case LOCALE_zhTW: localizedExit = LOCALE_EXIT_5; break;
+            case LOCALE_esES: localizedExit = LOCALE_EXIT_6; break;
+            case LOCALE_esMX: localizedExit = LOCALE_EXIT_7; break;
+            case LOCALE_ruRU: localizedExit = LOCALE_EXIT_8; break;
+            case LOCALE_enUS: default: localizedExit = LOCALE_EXIT_0;
         }
+
+        switch (player->GetSession()->GetSessionDbcLocale())
+        {
+            case LOCALE_koKR: localizedBack = LOCALE_BACK_1; break;
+            case LOCALE_frFR: localizedBack = LOCALE_BACK_2; break;
+            case LOCALE_deDE: localizedBack = LOCALE_BACK_3; break;
+            case LOCALE_zhCN: localizedBack = LOCALE_BACK_4; break;
+            case LOCALE_zhTW: localizedBack = LOCALE_BACK_5; break;
+            case LOCALE_esES: localizedBack = LOCALE_BACK_6; break;
+            case LOCALE_esMX: localizedBack = LOCALE_BACK_7; break;
+            case LOCALE_ruRU: localizedBack = LOCALE_BACK_8; break;
+            case LOCALE_enUS: default: localizedBack = LOCALE_BACK_0;
+        }
+
+        switch (player->GetSession()->GetSessionDbcLocale())
+        {
+            case LOCALE_koKR: localizedGold = LOCALE_GOLD_1; break;
+            case LOCALE_frFR: localizedGold = LOCALE_GOLD_2; break;
+            case LOCALE_deDE: localizedGold = LOCALE_GOLD_3; break;
+            case LOCALE_zhCN: localizedGold = LOCALE_GOLD_4; break;
+            case LOCALE_zhTW: localizedGold = LOCALE_GOLD_5; break;
+            case LOCALE_esES: localizedGold = LOCALE_GOLD_6; break;
+            case LOCALE_esMX: localizedGold = LOCALE_GOLD_7; break;
+            case LOCALE_ruRU: localizedGold = LOCALE_GOLD_8; break;
+            case LOCALE_enUS: default: localizedGold = LOCALE_GOLD_0;
+        }
+
+        if (player->getGender() == GENDER_FEMALE)
+        {
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedBES = LOCALE_BES_1; break;
+                case LOCALE_frFR: localizedBES = LOCALE_BES_2; break;
+                case LOCALE_deDE: localizedBES = LOCALE_BES_3; break;
+                case LOCALE_zhCN: localizedBES = LOCALE_BES_4; break;
+                case LOCALE_zhTW: localizedBES = LOCALE_BES_5; break;
+                case LOCALE_esES: localizedBES = LOCALE_BES_6; break;
+                case LOCALE_esMX: localizedBES = LOCALE_BES_7; break;
+                case LOCALE_ruRU: localizedBES = LOCALE_BES_8; break;
+                case LOCALE_enUS: default: localizedBES = LOCALE_BES_0;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedDRS = LOCALE_DRS_1; break;
+                case LOCALE_frFR: localizedDRS = LOCALE_DRS_2; break;
+                case LOCALE_deDE: localizedDRS = LOCALE_DRS_3; break;
+                case LOCALE_zhCN: localizedDRS = LOCALE_DRS_4; break;
+                case LOCALE_zhTW: localizedDRS = LOCALE_DRS_5; break;
+                case LOCALE_esES: localizedDRS = LOCALE_DRS_6; break;
+                case LOCALE_esMX: localizedDRS = LOCALE_DRS_7; break;
+                case LOCALE_ruRU: localizedDRS = LOCALE_DRS_8; break;
+                case LOCALE_enUS: default: localizedDRS = LOCALE_DRS_0;
+            }
+
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedDWS = LOCALE_DWS_1; break;
+                case LOCALE_frFR: localizedDWS = LOCALE_DWS_2; break;
+                case LOCALE_deDE: localizedDWS = LOCALE_DWS_3; break;
+                case LOCALE_zhCN: localizedDWS = LOCALE_DWS_4; break;
+                case LOCALE_zhTW: localizedDWS = LOCALE_DWS_5; break;
+                case LOCALE_esES: localizedDWS = LOCALE_DWS_6; break;
+                case LOCALE_esMX: localizedDWS = LOCALE_DWS_7; break;
+                case LOCALE_ruRU: localizedDWS = LOCALE_DWS_8; break;
+                case LOCALE_enUS: default: localizedDWS = LOCALE_DWS_0;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                 case LOCALE_koKR: localizedGNS = LOCALE_GNS_1; break;
+                 case LOCALE_frFR: localizedGNS = LOCALE_GNS_2; break;
+                 case LOCALE_deDE: localizedGNS = LOCALE_GNS_3; break;
+                 case LOCALE_zhCN: localizedGNS = LOCALE_GNS_4; break;
+                 case LOCALE_zhTW: localizedGNS = LOCALE_GNS_5; break;
+                 case LOCALE_esES: localizedGNS = LOCALE_GNS_6; break;
+                 case LOCALE_esMX: localizedGNS = LOCALE_GNS_7; break;
+                 case LOCALE_ruRU: localizedGNS = LOCALE_GNS_8; break;
+                 case LOCALE_enUS: default: localizedGNS = LOCALE_GNS_0;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedHUS = LOCALE_HUS_1; break;
+                case LOCALE_frFR: localizedHUS = LOCALE_HUS_2; break;
+                case LOCALE_deDE: localizedHUS = LOCALE_HUS_3; break;
+                case LOCALE_zhCN: localizedHUS = LOCALE_HUS_4; break;
+                case LOCALE_zhTW: localizedHUS = LOCALE_HUS_5; break;
+                case LOCALE_esES: localizedHUS = LOCALE_HUS_6; break;
+                case LOCALE_esMX: localizedHUS = LOCALE_HUS_7; break;
+                case LOCALE_ruRU: localizedHUS = LOCALE_HUS_8; break;
+                case LOCALE_enUS: default: localizedHUS = LOCALE_HUS_0;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedNES = LOCALE_NES_1; break;
+                case LOCALE_frFR: localizedNES = LOCALE_NES_2; break;
+                case LOCALE_deDE: localizedNES = LOCALE_NES_3; break;
+                case LOCALE_zhCN: localizedNES = LOCALE_NES_4; break;
+                case LOCALE_zhTW: localizedNES = LOCALE_NES_5; break;
+                case LOCALE_esES: localizedNES = LOCALE_NES_6; break;
+                case LOCALE_esMX: localizedNES = LOCALE_NES_7; break;
+                case LOCALE_ruRU: localizedNES = LOCALE_NES_8; break;
+                case LOCALE_enUS: default: localizedNES = LOCALE_NES_0;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedORC = LOCALE_ORC_1; break;
+                case LOCALE_frFR: localizedORC = LOCALE_ORC_2; break;
+                case LOCALE_deDE: localizedORC = LOCALE_ORC_3; break;
+                case LOCALE_zhCN: localizedORC = LOCALE_ORC_4; break;
+                case LOCALE_zhTW: localizedORC = LOCALE_ORC_5; break;
+                case LOCALE_esES: localizedORC = LOCALE_ORC_6; break;
+                case LOCALE_esMX: localizedORC = LOCALE_ORC_7; break;
+                case LOCALE_ruRU: localizedORC = LOCALE_ORC_8; break;
+                case LOCALE_enUS: default: localizedORC = LOCALE_ORC_0;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedTUR = LOCALE_TUR_1; break;
+                case LOCALE_frFR: localizedTUR = LOCALE_TUR_2; break;
+                case LOCALE_deDE: localizedTUR = LOCALE_TUR_3; break;
+                case LOCALE_zhCN: localizedTUR = LOCALE_TUR_4; break;
+                case LOCALE_zhTW: localizedTUR = LOCALE_TUR_5; break;
+                case LOCALE_esES: localizedTUR = LOCALE_TUR_6; break;
+                case LOCALE_esMX: localizedTUR = LOCALE_TUR_7; break;
+                case LOCALE_ruRU: localizedTUR = LOCALE_TUR_8; break;
+                case LOCALE_enUS: default: localizedTUR = LOCALE_TUR_0;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedTRL = LOCALE_TRL_1; break;
+                case LOCALE_frFR: localizedTRL = LOCALE_TRL_2; break;
+                case LOCALE_deDE: localizedTRL = LOCALE_TRL_3; break;
+                case LOCALE_zhCN: localizedTRL = LOCALE_TRL_4; break;
+                case LOCALE_zhTW: localizedTRL = LOCALE_TRL_5; break;
+                case LOCALE_esES: localizedTRL = LOCALE_TRL_6; break;
+                case LOCALE_esMX: localizedTRL = LOCALE_TRL_7; break;
+                case LOCALE_ruRU: localizedTRL = LOCALE_TRL_8; break;
+                case LOCALE_enUS: default: localizedTRL = LOCALE_TRL_0;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedUND = LOCALE_UND_1; break;
+                case LOCALE_frFR: localizedUND = LOCALE_UND_2; break;
+                case LOCALE_deDE: localizedUND = LOCALE_UND_3; break;
+                case LOCALE_zhCN: localizedUND = LOCALE_UND_4; break;
+                case LOCALE_zhTW: localizedUND = LOCALE_UND_5; break;
+                case LOCALE_esES: localizedUND = LOCALE_UND_6; break;
+                case LOCALE_esMX: localizedUND = LOCALE_UND_7; break;
+                case LOCALE_ruRU: localizedUND = LOCALE_UND_8; break;
+                case LOCALE_enUS: default: localizedUND = LOCALE_UND_0;
+            }
+        }
+        if (player->getGender() == GENDER_MALE)
+        {
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedBES = LOCALE_BES_10; break;
+                case LOCALE_frFR: localizedBES = LOCALE_BES_11; break;
+                case LOCALE_deDE: localizedBES = LOCALE_BES_12; break;
+                case LOCALE_zhCN: localizedBES = LOCALE_BES_13; break;
+                case LOCALE_zhTW: localizedBES = LOCALE_BES_14; break;
+                case LOCALE_esES: localizedBES = LOCALE_BES_15; break;
+                case LOCALE_esMX: localizedBES = LOCALE_BES_16; break;
+                case LOCALE_ruRU: localizedBES = LOCALE_BES_17; break;
+                case LOCALE_enUS: default: localizedBES = LOCALE_BES_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedDRS = LOCALE_DRS_10; break;
+                case LOCALE_frFR: localizedDRS = LOCALE_DRS_11; break;
+                case LOCALE_deDE: localizedDRS = LOCALE_DRS_12; break;
+                case LOCALE_zhCN: localizedDRS = LOCALE_DRS_13; break;
+                case LOCALE_zhTW: localizedDRS = LOCALE_DRS_14; break;
+                case LOCALE_esES: localizedDRS = LOCALE_DRS_15; break;
+                case LOCALE_esMX: localizedDRS = LOCALE_DRS_16; break;
+                case LOCALE_ruRU: localizedDRS = LOCALE_DRS_17; break;
+                case LOCALE_enUS: default: localizedDRS = LOCALE_DRS_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedDWS = LOCALE_DWS_10; break;
+                case LOCALE_frFR: localizedDWS = LOCALE_DWS_11; break;
+                case LOCALE_deDE: localizedDWS = LOCALE_DWS_12; break;
+                case LOCALE_zhCN: localizedDWS = LOCALE_DWS_13; break;
+                case LOCALE_zhTW: localizedDWS = LOCALE_DWS_14; break;
+                case LOCALE_esES: localizedDWS = LOCALE_DWS_15; break;
+                case LOCALE_esMX: localizedDWS = LOCALE_DWS_16; break;
+                case LOCALE_ruRU: localizedDWS = LOCALE_DWS_17; break;
+                case LOCALE_enUS: default: localizedDWS = LOCALE_DWS_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedGNS = LOCALE_GNS_10; break;
+                case LOCALE_frFR: localizedGNS = LOCALE_GNS_11; break;
+                case LOCALE_deDE: localizedGNS = LOCALE_GNS_12; break;
+                case LOCALE_zhCN: localizedGNS = LOCALE_GNS_13; break;
+                case LOCALE_zhTW: localizedGNS = LOCALE_GNS_14; break;
+                case LOCALE_esES: localizedGNS = LOCALE_GNS_15; break;
+                case LOCALE_esMX: localizedGNS = LOCALE_GNS_16; break;
+                case LOCALE_ruRU: localizedGNS = LOCALE_GNS_17; break;
+                case LOCALE_enUS: default: localizedGNS = LOCALE_GNS_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedHUS = LOCALE_HUS_10; break;
+                case LOCALE_frFR: localizedHUS = LOCALE_HUS_11; break;
+                case LOCALE_deDE: localizedHUS = LOCALE_HUS_12; break;
+                case LOCALE_zhCN: localizedHUS = LOCALE_HUS_13; break;
+                case LOCALE_zhTW: localizedHUS = LOCALE_HUS_14; break;
+                case LOCALE_esES: localizedHUS = LOCALE_HUS_15; break;
+                case LOCALE_esMX: localizedHUS = LOCALE_HUS_16; break;
+                case LOCALE_ruRU: localizedHUS = LOCALE_HUS_17; break;
+                case LOCALE_enUS: default: localizedHUS = LOCALE_HUS_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedNES = LOCALE_NES_10; break;
+                case LOCALE_frFR: localizedNES = LOCALE_NES_11; break;
+                case LOCALE_deDE: localizedNES = LOCALE_NES_12; break;
+                case LOCALE_zhCN: localizedNES = LOCALE_NES_13; break;
+                case LOCALE_zhTW: localizedNES = LOCALE_NES_14; break;
+                case LOCALE_esES: localizedNES = LOCALE_NES_15; break;
+                case LOCALE_esMX: localizedNES = LOCALE_NES_16; break;
+                case LOCALE_ruRU: localizedNES = LOCALE_NES_17; break;
+                case LOCALE_enUS: default: localizedNES = LOCALE_NES_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedORC = LOCALE_ORC_10; break;
+                case LOCALE_frFR: localizedORC = LOCALE_ORC_11; break;
+                case LOCALE_deDE: localizedORC = LOCALE_ORC_12; break;
+                case LOCALE_zhCN: localizedORC = LOCALE_ORC_13; break;
+                case LOCALE_zhTW: localizedORC = LOCALE_ORC_14; break;
+                case LOCALE_esES: localizedORC = LOCALE_ORC_15; break;
+                case LOCALE_esMX: localizedORC = LOCALE_ORC_16; break;
+                case LOCALE_ruRU: localizedORC = LOCALE_ORC_17; break;
+                case LOCALE_enUS: default: localizedORC = LOCALE_ORC_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedTUR = LOCALE_TUR_10; break;
+                case LOCALE_frFR: localizedTUR = LOCALE_TUR_11; break;
+                case LOCALE_deDE: localizedTUR = LOCALE_TUR_12; break;
+                case LOCALE_zhCN: localizedTUR = LOCALE_TUR_13; break;
+                case LOCALE_zhTW: localizedTUR = LOCALE_TUR_14; break;
+                case LOCALE_esES: localizedTUR = LOCALE_TUR_15; break;
+                case LOCALE_esMX: localizedTUR = LOCALE_TUR_16; break;
+                case LOCALE_ruRU: localizedTUR = LOCALE_TUR_17; break;
+                case LOCALE_enUS: default: localizedTUR = LOCALE_TUR_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedTRL = LOCALE_TRL_10; break;
+                case LOCALE_frFR: localizedTRL = LOCALE_TRL_11; break;
+                case LOCALE_deDE: localizedTRL = LOCALE_TRL_12; break;
+                case LOCALE_zhCN: localizedTRL = LOCALE_TRL_13; break;
+                case LOCALE_zhTW: localizedTRL = LOCALE_TRL_14; break;
+                case LOCALE_esES: localizedTRL = LOCALE_TRL_15; break;
+                case LOCALE_esMX: localizedTRL = LOCALE_TRL_16; break;
+                case LOCALE_ruRU: localizedTRL = LOCALE_TRL_17; break;
+                case LOCALE_enUS: default: localizedTRL = LOCALE_TRL_9;
+            }
+            switch (player->GetSession()->GetSessionDbcLocale())
+            {
+                case LOCALE_koKR: localizedUND = LOCALE_UND_10; break;
+                case LOCALE_frFR: localizedUND = LOCALE_UND_11; break;
+                case LOCALE_deDE: localizedUND = LOCALE_UND_12; break;
+                case LOCALE_zhCN: localizedUND = LOCALE_UND_13; break;
+                case LOCALE_zhTW: localizedUND = LOCALE_UND_14; break;
+                case LOCALE_esES: localizedUND = LOCALE_UND_15; break;
+                case LOCALE_esMX: localizedUND = LOCALE_UND_16; break;
+                case LOCALE_ruRU: localizedUND = LOCALE_UND_17; break;
+                case LOCALE_enUS: default: localizedUND = LOCALE_UND_9;
+            }
+        }
+
         std::ostringstream messageBE;
         messageBE << localizedBES << RTS1 << localizedGold;
         std::ostringstream messageDR;
