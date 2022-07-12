@@ -3,5 +3,5 @@
 ## Update SQL
 
 DB_WORLD_CUSTOM_PATHS+=(
-	"$MOD_RACIAL_TRAIT_SWAP_ROOT/sql/world/"
+	"$MOD_RACIAL_TRAIT_SWAP_ROOT"/sql/world/"
 )
