@@ -857,7 +857,7 @@ public:
                 player->learnSpell(59547, false);//Gift of Naaru
                 player->learnSpell(59540, false);//Shadow Resistance
             }
-            if (player->getClass() == CLASS_SHAMAN)
+            if (player->getClass() == CLASS_WARRIOR)
             {
                 player->learnSpell(28880, false);//Gift of Naaru
                 player->learnSpell(59221, false);//Shadow Resistance
