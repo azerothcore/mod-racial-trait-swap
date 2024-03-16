@@ -432,19 +432,21 @@ public:
     bool OnGossipSelect(Player* player, Creature* creature, uint32 /*menuId*/, uint32 gossipListId) override
     {
         const int32 RTS1 = sConfigMgr->GetOption<uint32>("Racial.Traits.Swap.Gold", 100);
-        char const* localizedExit;
-        char const* localizedBack;
-        char const* localizedGold;
-        char const* localizedBES;
-        char const* localizedDRS;
-        char const* localizedDWS;
-        char const* localizedGNS;
-        char const* localizedHUS;
-        char const* localizedNES;
-        char const* localizedORC;
-        char const* localizedTUR;
-        char const* localizedTRL;
-        char const* localizedUND;
+
+        char const* localizedExit = {};
+        char const* localizedBack = {};
+        char const* localizedGold = {};
+        char const* localizedBES = {};
+        char const* localizedDRS = {};
+        char const* localizedDWS = {};
+        char const* localizedGNS = {};
+        char const* localizedHUS = {};
+        char const* localizedNES = {};
+        char const* localizedORC = {};
+        char const* localizedTUR = {};
+        char const* localizedTRL = {};
+        char const* localizedUND = {};
+
         switch (player->GetSession()->GetSessionDbcLocale())
         {
             case LOCALE_koKR: localizedExit = LOCALE_EXIT_1; break;
@@ -752,6 +754,7 @@ public:
         messageTR << localizedTRL << RTS1 << localizedGold;
         std::ostringstream messageUN;
         messageUN << localizedUND << RTS1 << localizedGold;
+
         ClearGossipMenuFor(player);
 
         switch (gossipListId)
