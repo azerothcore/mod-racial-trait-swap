@@ -1,26 +1,26 @@
-[worldserver]
-
-###################################################################################################
-#Azerothcore Racial Trait Swap NPC  #
-#####################################
-#
-#    Azerothcore Racial Trait NPC Cost
-#        For a cost, you can swap our you current racial traits for that of another.
-#
-#    Azerothcore.Racial.Trait.Swap.Announce.enable
-#         Description: Announces Module when player logs in.
-#         Default:    0 - (Disabled)
-#                     1 - (Enabled)
-
-Azerothcore.Racial.Trait.Swap.Announce.enable = 1
-
-#
-#    Racial.Traits.Swap.Gold
-#         Description:  Cost in gold for Racial Trait Exchange.
-#         Default:    0 - (Zero Gold Free)
-#                     10 - (Ten Gold Cost)
-
-Racial.Traits.Swap.Gold = 10
-
-#
-###################################################################################################
+[世界服务器]  
+  
+###################################################################################################  
+# Azerothcore 种族额外天赋 NPC
+#####################################  
+#  
+# Azerothcore 种族特性 NPC 费用  
+# 你可以支付一定费用，将当前的种族额外天赋为另一种族的特性。
+#  
+# 艾泽拉斯核心.Racial.Trait.Swap.Announce.enable  
+#        描述: 当玩家登录时，公布模块信息。
+#        默认值： 0 - （禁用） 
+# 1 - （启用） 
+  
+Azerothcore.Racial.Trait.Swap.Announce.enable = 0  
+  
+#  
+# 种族特征.Swap.Gold  
+#        描述: 种族额外天赋所需的金币费用。
+#        默认值： 0 - （零金币，免费） 
+# 10 - （十金币费用） 
+  
+Racial.Traits.Swap.Gold = 10  
+  
+#  
+#######################################################################################################
