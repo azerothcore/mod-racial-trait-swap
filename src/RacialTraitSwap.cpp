@@ -466,92 +466,48 @@ public:
         {
             case LOCALE_koKR:
                 localizedExit = LOCALE_EXIT_1;
-                break;
-            case LOCALE_frFR:
-                localizedExit = LOCALE_EXIT_2;
-                break;
-            case LOCALE_deDE:
-                localizedExit = LOCALE_EXIT_3;
-                break;
-            case LOCALE_zhCN:
-                localizedExit = LOCALE_EXIT_4;
-                break;
-            case LOCALE_zhTW:
-                localizedExit = LOCALE_EXIT_5;
-                break;
-            case LOCALE_esES:
-                localizedExit = LOCALE_EXIT_6;
-                break;
-            case LOCALE_esMX:
-                localizedExit = LOCALE_EXIT_7;
-                break;
-            case LOCALE_ruRU:
-                localizedExit = LOCALE_EXIT_8;
-                break;
-            case LOCALE_enUS:
-            default:
-                localizedExit = LOCALE_EXIT_0;
-        }
-
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-            case LOCALE_koKR:
                 localizedBack = LOCALE_BACK_1;
-                break;
-            case LOCALE_frFR:
-                localizedBack = LOCALE_BACK_2;
-                break;
-            case LOCALE_deDE:
-                localizedBack = LOCALE_BACK_3;
-                break;
-            case LOCALE_zhCN:
-                localizedBack = LOCALE_BACK_4;
-                break;
-            case LOCALE_zhTW:
-                localizedBack = LOCALE_BACK_5;
-                break;
-            case LOCALE_esES:
-                localizedBack = LOCALE_BACK_6;
-                break;
-            case LOCALE_esMX:
-                localizedBack = LOCALE_BACK_7;
-                break;
-            case LOCALE_ruRU:
-                localizedBack = LOCALE_BACK_8;
-                break;
-            case LOCALE_enUS:
-            default:
-                localizedBack = LOCALE_BACK_0;
-        }
-
-        switch (player->GetSession()->GetSessionDbcLocale())
-        {
-            case LOCALE_koKR:
                 localizedGold = LOCALE_GOLD_1;
                 break;
             case LOCALE_frFR:
+                localizedExit = LOCALE_EXIT_2;
+                localizedBack = LOCALE_BACK_2;
                 localizedGold = LOCALE_GOLD_2;
                 break;
             case LOCALE_deDE:
+                localizedExit = LOCALE_EXIT_3;
+                localizedBack = LOCALE_BACK_3;
                 localizedGold = LOCALE_GOLD_3;
                 break;
             case LOCALE_zhCN:
+                localizedExit = LOCALE_EXIT_4;
+                localizedBack = LOCALE_BACK_4;
                 localizedGold = LOCALE_GOLD_4;
                 break;
             case LOCALE_zhTW:
+                localizedExit = LOCALE_EXIT_5;
+                localizedBack = LOCALE_BACK_5;
                 localizedGold = LOCALE_GOLD_5;
                 break;
             case LOCALE_esES:
+                localizedExit = LOCALE_EXIT_6;
+                localizedBack = LOCALE_BACK_6;
                 localizedGold = LOCALE_GOLD_6;
                 break;
             case LOCALE_esMX:
+                localizedExit = LOCALE_EXIT_7;
+                localizedBack = LOCALE_BACK_7;
                 localizedGold = LOCALE_GOLD_7;
                 break;
             case LOCALE_ruRU:
+                localizedExit = LOCALE_EXIT_8;
+                localizedBack = LOCALE_BACK_8;
                 localizedGold = LOCALE_GOLD_8;
                 break;
             case LOCALE_enUS:
             default:
+                localizedExit = LOCALE_EXIT_0;
+                localizedBack = LOCALE_BACK_0;
                 localizedGold = LOCALE_GOLD_0;
         }
 
@@ -561,604 +517,225 @@ public:
             {
                 case LOCALE_koKR:
                     localizedBES = LOCALE_BES_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedBES = LOCALE_BES_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedBES = LOCALE_BES_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedBES = LOCALE_BES_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedBES = LOCALE_BES_5;
-                    break;
-                case LOCALE_esES:
-                    localizedBES = LOCALE_BES_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedBES = LOCALE_BES_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedBES = LOCALE_BES_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedBES = LOCALE_BES_0;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedDRS = LOCALE_DRS_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedDRS = LOCALE_DRS_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedDRS = LOCALE_DRS_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedDRS = LOCALE_DRS_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedDRS = LOCALE_DRS_5;
-                    break;
-                case LOCALE_esES:
-                    localizedDRS = LOCALE_DRS_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedDRS = LOCALE_DRS_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedDRS = LOCALE_DRS_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedDRS = LOCALE_DRS_0;
-            }
-
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedDWS = LOCALE_DWS_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedDWS = LOCALE_DWS_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedDWS = LOCALE_DWS_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedDWS = LOCALE_DWS_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedDWS = LOCALE_DWS_5;
-                    break;
-                case LOCALE_esES:
-                    localizedDWS = LOCALE_DWS_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedDWS = LOCALE_DWS_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedDWS = LOCALE_DWS_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedDWS = LOCALE_DWS_0;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedGNS = LOCALE_GNS_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedGNS = LOCALE_GNS_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedGNS = LOCALE_GNS_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedGNS = LOCALE_GNS_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedGNS = LOCALE_GNS_5;
-                    break;
-                case LOCALE_esES:
-                    localizedGNS = LOCALE_GNS_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedGNS = LOCALE_GNS_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedGNS = LOCALE_GNS_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedGNS = LOCALE_GNS_0;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedHUS = LOCALE_HUS_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedHUS = LOCALE_HUS_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedHUS = LOCALE_HUS_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedHUS = LOCALE_HUS_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedHUS = LOCALE_HUS_5;
-                    break;
-                case LOCALE_esES:
-                    localizedHUS = LOCALE_HUS_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedHUS = LOCALE_HUS_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedHUS = LOCALE_HUS_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedHUS = LOCALE_HUS_0;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedNES = LOCALE_NES_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedNES = LOCALE_NES_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedNES = LOCALE_NES_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedNES = LOCALE_NES_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedNES = LOCALE_NES_5;
-                    break;
-                case LOCALE_esES:
-                    localizedNES = LOCALE_NES_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedNES = LOCALE_NES_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedNES = LOCALE_NES_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedNES = LOCALE_NES_0;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedORC = LOCALE_ORC_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedORC = LOCALE_ORC_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedORC = LOCALE_ORC_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedORC = LOCALE_ORC_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedORC = LOCALE_ORC_5;
-                    break;
-                case LOCALE_esES:
-                    localizedORC = LOCALE_ORC_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedORC = LOCALE_ORC_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedORC = LOCALE_ORC_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedORC = LOCALE_ORC_0;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedTUR = LOCALE_TUR_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedTUR = LOCALE_TUR_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedTUR = LOCALE_TUR_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedTUR = LOCALE_TUR_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedTUR = LOCALE_TUR_5;
-                    break;
-                case LOCALE_esES:
-                    localizedTUR = LOCALE_TUR_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedTUR = LOCALE_TUR_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedTUR = LOCALE_TUR_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedTUR = LOCALE_TUR_0;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedTRL = LOCALE_TRL_1;
-                    break;
-                case LOCALE_frFR:
-                    localizedTRL = LOCALE_TRL_2;
-                    break;
-                case LOCALE_deDE:
-                    localizedTRL = LOCALE_TRL_3;
-                    break;
-                case LOCALE_zhCN:
-                    localizedTRL = LOCALE_TRL_4;
-                    break;
-                case LOCALE_zhTW:
-                    localizedTRL = LOCALE_TRL_5;
-                    break;
-                case LOCALE_esES:
-                    localizedTRL = LOCALE_TRL_6;
-                    break;
-                case LOCALE_esMX:
-                    localizedTRL = LOCALE_TRL_7;
-                    break;
-                case LOCALE_ruRU:
-                    localizedTRL = LOCALE_TRL_8;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedTRL = LOCALE_TRL_0;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedUND = LOCALE_UND_1;
                     break;
                 case LOCALE_frFR:
+                    localizedBES = LOCALE_BES_2;
+                    localizedDRS = LOCALE_DRS_2;
+                    localizedDWS = LOCALE_DWS_2;
+                    localizedGNS = LOCALE_GNS_2;
+                    localizedHUS = LOCALE_HUS_2;
+                    localizedNES = LOCALE_NES_2;
+                    localizedORC = LOCALE_ORC_2;
+                    localizedTUR = LOCALE_TUR_2;
+                    localizedTRL = LOCALE_TRL_2;
                     localizedUND = LOCALE_UND_2;
                     break;
                 case LOCALE_deDE:
+                    localizedBES = LOCALE_BES_3;
+                    localizedDRS = LOCALE_DRS_3;
+                    localizedDWS = LOCALE_DWS_3;
+                    localizedGNS = LOCALE_GNS_3;
+                    localizedHUS = LOCALE_HUS_3;
+                    localizedNES = LOCALE_NES_3;
+                    localizedORC = LOCALE_ORC_3;
+                    localizedTUR = LOCALE_TUR_3;
+                    localizedTRL = LOCALE_TRL_3;
                     localizedUND = LOCALE_UND_3;
                     break;
                 case LOCALE_zhCN:
+                    localizedBES = LOCALE_BES_4;
+                    localizedDRS = LOCALE_DRS_4;
+                    localizedDWS = LOCALE_DWS_4;
+                    localizedGNS = LOCALE_GNS_4;
+                    localizedHUS = LOCALE_HUS_4;
+                    localizedNES = LOCALE_NES_4;
+                    localizedORC = LOCALE_ORC_4;
+                    localizedTUR = LOCALE_TUR_4;
+                    localizedTRL = LOCALE_TRL_4;
                     localizedUND = LOCALE_UND_4;
                     break;
                 case LOCALE_zhTW:
+                    localizedBES = LOCALE_BES_5;
+                    localizedDRS = LOCALE_DRS_5;
+                    localizedDWS = LOCALE_DWS_5;
+                    localizedGNS = LOCALE_GNS_5;
+                    localizedHUS = LOCALE_HUS_5;
+                    localizedNES = LOCALE_NES_5;
+                    localizedORC = LOCALE_ORC_5;
+                    localizedTUR = LOCALE_TUR_5;
+                    localizedTRL = LOCALE_TRL_5;
                     localizedUND = LOCALE_UND_5;
                     break;
                 case LOCALE_esES:
+                    localizedBES = LOCALE_BES_6;
+                    localizedDRS = LOCALE_DRS_6;
+                    localizedDWS = LOCALE_DWS_6;
+                    localizedGNS = LOCALE_GNS_6;
+                    localizedHUS = LOCALE_HUS_6;
+                    localizedNES = LOCALE_NES_6;
+                    localizedORC = LOCALE_ORC_6;
+                    localizedTUR = LOCALE_TUR_6;
+                    localizedTRL = LOCALE_TRL_6;
                     localizedUND = LOCALE_UND_6;
                     break;
                 case LOCALE_esMX:
+                    localizedBES = LOCALE_BES_7;
+                    localizedDRS = LOCALE_DRS_7;
+                    localizedDWS = LOCALE_DWS_7;
+                    localizedGNS = LOCALE_GNS_7;
+                    localizedHUS = LOCALE_HUS_7;
+                    localizedNES = LOCALE_NES_7;
+                    localizedORC = LOCALE_ORC_7;
+                    localizedTUR = LOCALE_TUR_7;
+                    localizedTRL = LOCALE_TRL_7;
                     localizedUND = LOCALE_UND_7;
                     break;
                 case LOCALE_ruRU:
+                    localizedBES = LOCALE_BES_8;
+                    localizedDRS = LOCALE_DRS_8;
+                    localizedDWS = LOCALE_DWS_8;
+                    localizedGNS = LOCALE_GNS_8;
+                    localizedHUS = LOCALE_HUS_8;
+                    localizedNES = LOCALE_NES_8;
+                    localizedORC = LOCALE_ORC_8;
+                    localizedTUR = LOCALE_TUR_8;
+                    localizedTRL = LOCALE_TRL_8;
                     localizedUND = LOCALE_UND_8;
                     break;
                 case LOCALE_enUS:
                 default:
+                    localizedBES = LOCALE_BES_0;
+                    localizedDRS = LOCALE_DRS_0;
+                    localizedDWS = LOCALE_DWS_0;
+                    localizedGNS = LOCALE_GNS_0;
+                    localizedHUS = LOCALE_HUS_0;
+                    localizedNES = LOCALE_NES_0;
+                    localizedORC = LOCALE_ORC_0;
+                    localizedTUR = LOCALE_TUR_0;
+                    localizedTRL = LOCALE_TRL_0;
                     localizedUND = LOCALE_UND_0;
             }
         }
-        if (player->getGender() == GENDER_MALE)
+        else if (player->getGender() == GENDER_MALE)
         {
             switch (player->GetSession()->GetSessionDbcLocale())
             {
                 case LOCALE_koKR:
                     localizedBES = LOCALE_BES_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedBES = LOCALE_BES_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedBES = LOCALE_BES_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedBES = LOCALE_BES_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedBES = LOCALE_BES_14;
-                    break;
-                case LOCALE_esES:
-                    localizedBES = LOCALE_BES_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedBES = LOCALE_BES_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedBES = LOCALE_BES_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedBES = LOCALE_BES_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedDRS = LOCALE_DRS_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedDRS = LOCALE_DRS_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedDRS = LOCALE_DRS_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedDRS = LOCALE_DRS_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedDRS = LOCALE_DRS_14;
-                    break;
-                case LOCALE_esES:
-                    localizedDRS = LOCALE_DRS_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedDRS = LOCALE_DRS_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedDRS = LOCALE_DRS_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedDRS = LOCALE_DRS_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedDWS = LOCALE_DWS_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedDWS = LOCALE_DWS_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedDWS = LOCALE_DWS_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedDWS = LOCALE_DWS_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedDWS = LOCALE_DWS_14;
-                    break;
-                case LOCALE_esES:
-                    localizedDWS = LOCALE_DWS_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedDWS = LOCALE_DWS_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedDWS = LOCALE_DWS_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedDWS = LOCALE_DWS_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedGNS = LOCALE_GNS_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedGNS = LOCALE_GNS_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedGNS = LOCALE_GNS_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedGNS = LOCALE_GNS_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedGNS = LOCALE_GNS_14;
-                    break;
-                case LOCALE_esES:
-                    localizedGNS = LOCALE_GNS_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedGNS = LOCALE_GNS_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedGNS = LOCALE_GNS_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedGNS = LOCALE_GNS_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedHUS = LOCALE_HUS_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedHUS = LOCALE_HUS_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedHUS = LOCALE_HUS_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedHUS = LOCALE_HUS_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedHUS = LOCALE_HUS_14;
-                    break;
-                case LOCALE_esES:
-                    localizedHUS = LOCALE_HUS_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedHUS = LOCALE_HUS_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedHUS = LOCALE_HUS_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedHUS = LOCALE_HUS_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedNES = LOCALE_NES_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedNES = LOCALE_NES_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedNES = LOCALE_NES_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedNES = LOCALE_NES_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedNES = LOCALE_NES_14;
-                    break;
-                case LOCALE_esES:
-                    localizedNES = LOCALE_NES_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedNES = LOCALE_NES_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedNES = LOCALE_NES_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedNES = LOCALE_NES_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedORC = LOCALE_ORC_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedORC = LOCALE_ORC_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedORC = LOCALE_ORC_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedORC = LOCALE_ORC_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedORC = LOCALE_ORC_14;
-                    break;
-                case LOCALE_esES:
-                    localizedORC = LOCALE_ORC_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedORC = LOCALE_ORC_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedORC = LOCALE_ORC_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedORC = LOCALE_ORC_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedTUR = LOCALE_TUR_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedTUR = LOCALE_TUR_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedTUR = LOCALE_TUR_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedTUR = LOCALE_TUR_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedTUR = LOCALE_TUR_14;
-                    break;
-                case LOCALE_esES:
-                    localizedTUR = LOCALE_TUR_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedTUR = LOCALE_TUR_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedTUR = LOCALE_TUR_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedTUR = LOCALE_TUR_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedTRL = LOCALE_TRL_10;
-                    break;
-                case LOCALE_frFR:
-                    localizedTRL = LOCALE_TRL_11;
-                    break;
-                case LOCALE_deDE:
-                    localizedTRL = LOCALE_TRL_12;
-                    break;
-                case LOCALE_zhCN:
-                    localizedTRL = LOCALE_TRL_13;
-                    break;
-                case LOCALE_zhTW:
-                    localizedTRL = LOCALE_TRL_14;
-                    break;
-                case LOCALE_esES:
-                    localizedTRL = LOCALE_TRL_15;
-                    break;
-                case LOCALE_esMX:
-                    localizedTRL = LOCALE_TRL_16;
-                    break;
-                case LOCALE_ruRU:
-                    localizedTRL = LOCALE_TRL_17;
-                    break;
-                case LOCALE_enUS:
-                default:
-                    localizedTRL = LOCALE_TRL_9;
-            }
-            switch (player->GetSession()->GetSessionDbcLocale())
-            {
-                case LOCALE_koKR:
                     localizedUND = LOCALE_UND_10;
                     break;
                 case LOCALE_frFR:
+                    localizedBES = LOCALE_BES_11;
+                    localizedDRS = LOCALE_DRS_11;
+                    localizedDWS = LOCALE_DWS_11;
+                    localizedGNS = LOCALE_GNS_11;
+                    localizedHUS = LOCALE_HUS_11;
+                    localizedNES = LOCALE_NES_11;
+                    localizedORC = LOCALE_ORC_11;
+                    localizedTUR = LOCALE_TUR_11;
+                    localizedTRL = LOCALE_TRL_11;
                     localizedUND = LOCALE_UND_11;
                     break;
                 case LOCALE_deDE:
+                    localizedBES = LOCALE_BES_12;
+                    localizedDRS = LOCALE_DRS_12;
+                    localizedDWS = LOCALE_DWS_12;
+                    localizedGNS = LOCALE_GNS_12;
+                    localizedHUS = LOCALE_HUS_12;
+                    localizedNES = LOCALE_NES_12;
+                    localizedORC = LOCALE_ORC_12;
+                    localizedTUR = LOCALE_TUR_12;
+                    localizedTRL = LOCALE_TRL_12;
                     localizedUND = LOCALE_UND_12;
                     break;
                 case LOCALE_zhCN:
+                    localizedBES = LOCALE_BES_13;
+                    localizedDRS = LOCALE_DRS_13;
+                    localizedDWS = LOCALE_DWS_13;
+                    localizedGNS = LOCALE_GNS_13;
+                    localizedHUS = LOCALE_HUS_13;
+                    localizedNES = LOCALE_NES_13;
+                    localizedORC = LOCALE_ORC_13;
+                    localizedTUR = LOCALE_TUR_13;
+                    localizedTRL = LOCALE_TRL_13;
                     localizedUND = LOCALE_UND_13;
                     break;
                 case LOCALE_zhTW:
+                    localizedBES = LOCALE_BES_14;
+                    localizedDRS = LOCALE_DRS_14;
+                    localizedDWS = LOCALE_DWS_14;
+                    localizedGNS = LOCALE_GNS_14;
+                    localizedHUS = LOCALE_HUS_14;
+                    localizedNES = LOCALE_NES_14;
+                    localizedORC = LOCALE_ORC_14;
+                    localizedTUR = LOCALE_TUR_14;
+                    localizedTRL = LOCALE_TRL_14;
                     localizedUND = LOCALE_UND_14;
                     break;
                 case LOCALE_esES:
+                    localizedBES = LOCALE_BES_15;
+                    localizedDRS = LOCALE_DRS_15;
+                    localizedDWS = LOCALE_DWS_15;
+                    localizedGNS = LOCALE_GNS_15;
+                    localizedHUS = LOCALE_HUS_15;
+                    localizedNES = LOCALE_NES_15;
+                    localizedORC = LOCALE_ORC_15;
+                    localizedTUR = LOCALE_TUR_15;
+                    localizedTRL = LOCALE_TRL_15;
                     localizedUND = LOCALE_UND_15;
                     break;
                 case LOCALE_esMX:
+                    localizedBES = LOCALE_BES_16;
+                    localizedDRS = LOCALE_DRS_16;
+                    localizedDWS = LOCALE_DWS_16;
+                    localizedGNS = LOCALE_GNS_16;
+                    localizedHUS = LOCALE_HUS_16;
+                    localizedNES = LOCALE_NES_16;
+                    localizedORC = LOCALE_ORC_16;
+                    localizedTUR = LOCALE_TUR_16;
+                    localizedTRL = LOCALE_TRL_16;
                     localizedUND = LOCALE_UND_16;
                     break;
                 case LOCALE_ruRU:
+                    localizedBES = LOCALE_BES_17;
+                    localizedDRS = LOCALE_DRS_17;
+                    localizedDWS = LOCALE_DWS_17;
+                    localizedGNS = LOCALE_GNS_17;
+                    localizedHUS = LOCALE_HUS_17;
+                    localizedNES = LOCALE_NES_17;
+                    localizedORC = LOCALE_ORC_17;
+                    localizedTUR = LOCALE_TUR_17;
+                    localizedTRL = LOCALE_TRL_17;
                     localizedUND = LOCALE_UND_17;
                     break;
                 case LOCALE_enUS:
                 default:
+                    localizedBES = LOCALE_BES_9;
+                    localizedDRS = LOCALE_DRS_9;
+                    localizedDWS = LOCALE_DWS_9;
+                    localizedGNS = LOCALE_GNS_9;
+                    localizedHUS = LOCALE_HUS_9;
+                    localizedNES = LOCALE_NES_9;
+                    localizedORC = LOCALE_ORC_9;
+                    localizedTUR = LOCALE_TUR_9;
+                    localizedTRL = LOCALE_TRL_9;
                     localizedUND = LOCALE_UND_9;
             }
         }
