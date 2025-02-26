@@ -392,9 +392,11 @@ void RemoveAllRacials(Player* player)
 class Azerothcore_Race_Trait_announce : public PlayerScript
 {
 public:
-    Azerothcore_Race_Trait_announce() : PlayerScript("Azerothcore_Race_Trait_announce") { }
+    Azerothcore_Race_Trait_announce() : PlayerScript("Azerothcore_Race_Trait_announce", {
+        PLAYERHOOK_ON_LOGIN
+    }) { }
 
-    void OnLogin(Player* Player)
+    void OnPlayerLogin(Player* Player)
     {
         if (sConfigMgr->GetOption<bool>("Azerothcore.Racial.Trait.Swap.Announce.enable", true))
             ChatHandler(Player->GetSession()).SendSysMessage("This server is running the |cff4CFF00Azerothcore Racial Trait Swap NPC |rmodule.");
